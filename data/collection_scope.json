@@ -1,0 +1,71 @@
+{
+  "window_start": "2025-06-10",
+  "window_end": "2026-06-10",
+  "window_label": "2025-06-10_to_2026-06-10",
+  "companies": [
+    "DBS Group",
+    "Keppel Corporation",
+    "CapitaLand Investment",
+    "Singapore Airlines",
+    "Sembcorp Industries",
+    "Wilmar International",
+    "Singtel",
+    "OCBC",
+    "UOB",
+    "Mapletree Investments"
+  ],
+  "platform_priority": [
+    {
+      "platform": "company_official",
+      "use_for": "Sustainability reports, annual reports, investor relations, company announcements, and newsroom updates."
+    },
+    {
+      "platform": "sgx_or_sgx_linked",
+      "use_for": "Corporate announcements, annual reports, sustainability reports, AGM notices, board changes, and market disclosures."
+    },
+    {
+      "platform": "careers_platform",
+      "use_for": "Forward-looking ESG intent through sustainability, compliance, data governance, cybersecurity, safety, and engineering hiring."
+    },
+    {
+      "platform": "third_party_risk",
+      "use_for": "Selected credible controversy, litigation, regulatory, environmental, labour, and governance risk evidence."
+    }
+  ],
+  "esg_dimensions": {
+    "Environmental": [
+      "GHG emissions",
+      "Scope 1",
+      "Scope 2",
+      "Scope 3",
+      "energy consumption",
+      "renewable energy",
+      "water",
+      "waste",
+      "climate risk",
+      "green buildings",
+      "transition risk"
+    ],
+    "Social": [
+      "employee safety",
+      "diversity",
+      "training",
+      "turnover",
+      "labour practices",
+      "human rights",
+      "community impact",
+      "wellbeing"
+    ],
+    "Governance": [
+      "board independence",
+      "women on board",
+      "audit committee",
+      "risk committee",
+      "anti-corruption",
+      "compliance",
+      "whistleblowing",
+      "data governance",
+      "cybersecurity"
+    ]
+  }
+}

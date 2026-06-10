@@ -1,0 +1,102 @@
+[
+  {
+    "company_id": "C001",
+    "name": "DBS Group",
+    "sector": "Banking",
+    "sgx_identifier": "SGX:D05",
+    "website": "https://www.dbs.com",
+    "initial_esg_score": 74,
+    "historical_esg_scores": { "2021": 68, "2022": 70, "2023": 72, "2024": 74 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C002",
+    "name": "Keppel Corporation",
+    "sector": "Infrastructure and Asset Management",
+    "sgx_identifier": "SGX:BN4",
+    "website": "https://www.keppel.com",
+    "initial_esg_score": 69,
+    "historical_esg_scores": { "2021": 61, "2022": 64, "2023": 67, "2024": 69 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C003",
+    "name": "CapitaLand Investment",
+    "sector": "Real Estate Investment Management",
+    "sgx_identifier": "SGX:9CI",
+    "website": "https://www.capitalandinvest.com",
+    "initial_esg_score": 71,
+    "historical_esg_scores": { "2021": 66, "2022": 68, "2023": 70, "2024": 71 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C004",
+    "name": "Singapore Airlines",
+    "sector": "Aviation",
+    "sgx_identifier": "SGX:C6L",
+    "website": "https://www.singaporeair.com",
+    "initial_esg_score": 63,
+    "historical_esg_scores": { "2021": 59, "2022": 60, "2023": 62, "2024": 63 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C005",
+    "name": "Sembcorp Industries",
+    "sector": "Energy and Utilities",
+    "sgx_identifier": "SGX:U96",
+    "website": "https://www.sembcorp.com",
+    "initial_esg_score": 67,
+    "historical_esg_scores": { "2021": 57, "2022": 61, "2023": 64, "2024": 67 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C006",
+    "name": "Wilmar International",
+    "sector": "Agribusiness",
+    "sgx_identifier": "SGX:F34",
+    "website": "https://www.wilmar-international.com",
+    "initial_esg_score": 58,
+    "historical_esg_scores": { "2021": 55, "2022": 56, "2023": 57, "2024": 58 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C007",
+    "name": "Singtel",
+    "sector": "Telecommunications",
+    "sgx_identifier": "SGX:Z74",
+    "website": "https://www.singtel.com",
+    "initial_esg_score": 72,
+    "historical_esg_scores": { "2021": 67, "2022": 69, "2023": 71, "2024": 72 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C008",
+    "name": "OCBC",
+    "sector": "Banking",
+    "sgx_identifier": "SGX:O39",
+    "website": "https://www.ocbc.com",
+    "initial_esg_score": 73,
+    "historical_esg_scores": { "2021": 67, "2022": 69, "2023": 71, "2024": 73 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C009",
+    "name": "UOB",
+    "sector": "Banking",
+    "sgx_identifier": "SGX:U11",
+    "website": "https://www.uobgroup.com",
+    "initial_esg_score": 70,
+    "historical_esg_scores": { "2021": 64, "2022": 67, "2023": 69, "2024": 70 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; not an investment recommendation."
+  },
+  {
+    "company_id": "C010",
+    "name": "Mapletree Investments",
+    "sector": "Real Estate",
+    "sgx_identifier": "Issuer/Group reference",
+    "website": "https://www.mapletree.com.sg",
+    "initial_esg_score": 65,
+    "historical_esg_scores": { "2021": 60, "2022": 62, "2023": 64, "2024": 65 },
+    "prototype_note": "Seeded prototype record for ESG Momentum Radar; Mapletree Investments is included because it appears in the hackathon document company list."
+  }
+]
