@@ -43,6 +43,7 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
     category,
     score: categoryScore(dataset, category),
   }));
+  const radarMaxScore = Math.max(1, ...radarData.map((item) => item.score));
   const trendData = trends.map((trend) => ({
     period: trend.period,
     "Total signal score": trend.total_signal_score,
@@ -68,7 +69,7 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
       </button>
 
       <Header
-        eyebrow={`${company.sector} · ${company.sgx_identifier}`}
+        eyebrow={`${company.sector} - ${company.sgx_identifier}`}
         title={company.name}
         description="Company-level ESG momentum view based on collected evidence signals, confidence scores, and available trend points."
         windowLabel={scopeWindow(data.scope)}
@@ -87,44 +88,50 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
         <KpiCard label="Positive Signal Ratio" value={formatPercent(analytics.positiveRatio)} icon={ShieldCheck} />
       </div>
 
-      <div className="mb-6 grid gap-6 xl:grid-cols-3">
+      <div className="mb-6 grid gap-6 xl:grid-cols-[minmax(390px,0.95fr)_minmax(0,1.45fr)]">
         <ChartCard title="ESG Breakdown Radar Chart" subtitle="Environmental, Social, and Governance evidence signal score.">
-          <div className="h-72">
+          <div className="radar-chart-frame h-72 px-2">
             <ResponsiveContainer width="100%" height="100%">
-              <RadarChart data={radarData}>
+              <RadarChart data={radarData} margin={{ top: 28, right: 54, bottom: 28, left: 54 }} outerRadius="62%">
                 <PolarGrid stroke="rgba(255,255,255,0.15)" />
-                <PolarAngleAxis dataKey="category" stroke="#cbd5e1" />
-                <PolarRadiusAxis stroke="#64748b" />
-                <Radar dataKey="score" stroke="#2dd4bf" fill="#2dd4bf" fillOpacity={0.28} />
-                <Tooltip contentStyle={{ background: "#0a1d2e", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }} />
+                <PolarAngleAxis dataKey="category" tick={{ fill: "#e2e8f0", fontSize: 12, fontWeight: 600 }} tickLine={false} />
+                <PolarRadiusAxis axisLine={false} tick={false} domain={[0, Math.ceil(radarMaxScore * 10) / 10]} />
+                <Radar dataKey="score" stroke="#22c55e" fill="#22c55e" fillOpacity={0.24} />
+                <Tooltip
+                  contentStyle={{ background: "#111827", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }}
+                  labelStyle={{ color: "#e5e7eb", fontWeight: 600 }}
+                  itemStyle={{ color: "#e5e7eb" }}
+                />
               </RadarChart>
             </ResponsiveContainer>
           </div>
         </ChartCard>
 
-        <div className="xl:col-span-2">
-          <ChartCard title="ESG Trend Line Chart" subtitle="Quarterly evidence signal trend; not a formal ESG rating trend.">
-            {trendData.length > 1 ? (
-              <div className="h-72">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={trendData} margin={{ top: 10, right: 20, left: -15, bottom: 0 }}>
-                    <CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} />
-                    <XAxis dataKey="period" stroke="#94a3b8" tickLine={false} axisLine={false} />
-                    <YAxis stroke="#94a3b8" tickLine={false} axisLine={false} />
-                    <Tooltip contentStyle={{ background: "#0a1d2e", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }} />
-                    <Legend />
-                    <Line type="monotone" dataKey="Total signal score" stroke="#2dd4bf" strokeWidth={2} dot={{ r: 3 }} />
-                    <Line type="monotone" dataKey="Environmental" stroke="#34d399" strokeWidth={2} dot={{ r: 3 }} />
-                    <Line type="monotone" dataKey="Social" stroke="#60a5fa" strokeWidth={2} dot={{ r: 3 }} />
-                    <Line type="monotone" dataKey="Governance" stroke="#a78bfa" strokeWidth={2} dot={{ r: 3 }} />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            ) : (
-              <EmptyState title="Limited trend history" message="Limited trend history available for this company." />
-            )}
-          </ChartCard>
-        </div>
+        <ChartCard title="ESG Trend Line Chart" subtitle="Quarterly evidence signal trend; not a formal ESG rating trend.">
+          {trendData.length > 1 ? (
+            <div className="h-72">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={trendData} margin={{ top: 10, right: 20, left: -15, bottom: 0 }}>
+                  <CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} />
+                  <XAxis dataKey="period" stroke="#94a3b8" tickLine={false} axisLine={false} />
+                  <YAxis stroke="#94a3b8" tickLine={false} axisLine={false} />
+                  <Tooltip
+                    contentStyle={{ background: "#111827", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }}
+                    labelStyle={{ color: "#e5e7eb", fontWeight: 600 }}
+                    itemStyle={{ color: "#e5e7eb" }}
+                  />
+                  <Legend />
+                  <Line type="monotone" dataKey="Total signal score" stroke="#22c55e" strokeWidth={2} dot={{ r: 3 }} />
+                  <Line type="monotone" dataKey="Environmental" stroke="#22c55e" strokeWidth={2} dot={{ r: 3 }} />
+                  <Line type="monotone" dataKey="Social" stroke="#38bdf8" strokeWidth={2} dot={{ r: 3 }} />
+                  <Line type="monotone" dataKey="Governance" stroke="#c084fc" strokeWidth={2} dot={{ r: 3 }} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          ) : (
+            <EmptyState title="Limited trend history" message="Limited trend history available for this company." />
+          )}
+        </ChartCard>
       </div>
 
       <div className="mb-6 grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
@@ -135,10 +142,15 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
                 <CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} />
                 <XAxis dataKey="direction" stroke="#94a3b8" tickLine={false} axisLine={false} />
                 <YAxis stroke="#94a3b8" tickLine={false} axisLine={false} allowDecimals={false} />
-                <Tooltip contentStyle={{ background: "#0a1d2e", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }} />
+                <Tooltip
+                  cursor={false}
+                  contentStyle={{ background: "#111827", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }}
+                  labelStyle={{ color: "#e5e7eb", fontWeight: 600 }}
+                  itemStyle={{ color: "#e5e7eb" }}
+                />
                 <Bar dataKey="count" radius={[6, 6, 0, 0]}>
                   {directionData.map((item) => (
-                    <Cell key={item.direction} fill={item.direction === "Negative" ? "#fb7185" : item.direction === "Positive" ? "#34d399" : "#f59e0b"} />
+                    <Cell key={item.direction} fill={item.direction === "Negative" ? "#fb7185" : item.direction === "Positive" ? "#22c55e" : "#f59e0b"} />
                   ))}
                 </Bar>
               </BarChart>
@@ -149,7 +161,7 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
         <ChartCard title="Category Score Snapshot">
           <div className="grid gap-3 sm:grid-cols-3">
             {categories.map((category) => (
-              <div key={category} className="rounded-xl border border-white/10 bg-white/5 p-4">
+              <div key={category} className="rounded-lg border border-white/10 bg-white/5 p-4">
                 <p className="text-sm font-semibold text-white">{category}</p>
                 <p className="mt-4 text-2xl font-semibold" style={{ color: categoryColor(category) }}>
                   {formatNumber(categoryScore(dataset, category))}

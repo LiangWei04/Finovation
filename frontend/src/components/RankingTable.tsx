@@ -43,20 +43,12 @@ export function RankingTable({ analytics }: RankingTableProps) {
   }, [analytics, direction, search, sector, sortKey]);
 
   return (
-    <section className="glass-panel rounded-xl p-5">
-      <div className="mb-4 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+    <section className="glass-panel rounded-lg p-4">
+      <div className="mb-4 flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
         <div>
           <h2 className="text-lg font-semibold text-white">ESG Momentum Ranking</h2>
-          <p className="mt-1 text-sm text-slate-400">Sorted by evidence signal score, signal volume, or confidence.</p>
+          <p className="mt-1 text-sm text-slate-400">Click any company row to open the detail view.</p>
         </div>
-        <button
-          type="button"
-          onClick={() => setDirection((value) => (value === "asc" ? "desc" : "asc"))}
-          className="inline-flex h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-sm text-slate-200 transition hover:border-teal/40"
-        >
-          {direction === "asc" ? <ArrowUp className="h-4 w-4" /> : <ArrowDown className="h-4 w-4" />}
-          {direction === "asc" ? "Ascending" : "Descending"}
-        </button>
       </div>
 
       <FilterBar>
@@ -77,49 +69,94 @@ export function RankingTable({ analytics }: RankingTableProps) {
           <option value="signalCount">Sort by signal count</option>
           <option value="confidence">Sort by confidence</option>
         </select>
+        <button
+          type="button"
+          onClick={() => setDirection((value) => (value === "asc" ? "desc" : "asc"))}
+          className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-white/10 bg-ink/95 px-3 text-sm text-slate-200 transition hover:border-teal/40"
+        >
+          {direction === "asc" ? <ArrowUp className="h-4 w-4" /> : <ArrowDown className="h-4 w-4" />}
+          {direction === "asc" ? "Ascending" : "Descending"}
+        </button>
       </FilterBar>
 
-      <div className="mt-4 overflow-x-auto">
-        <table className="min-w-[1100px] w-full border-collapse text-left text-sm">
-          <thead className="border-b border-white/10 text-xs uppercase text-slate-500">
-            <tr>
-              <th className="py-3 pr-3">Rank</th>
-              <th className="px-3 py-3">Company</th>
-              <th className="px-3 py-3">Sector</th>
-              <th className="px-3 py-3">SGX</th>
-              <th className="px-3 py-3 text-right">Momentum Score</th>
-              <th className="px-3 py-3 text-right">Signals</th>
-              <th className="px-3 py-3 text-right">Environmental</th>
-              <th className="px-3 py-3 text-right">Social</th>
-              <th className="px-3 py-3 text-right">Governance</th>
-              <th className="px-3 py-3 text-right">Avg Confidence</th>
-              <th className="py-3 pl-3">Classification</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((item, index) => (
-              <tr
-                key={item.company.company_id}
-                onClick={() => navigateTo(`/company/${item.company.company_id}`)}
-                className="cursor-pointer border-b border-white/5 text-slate-300 transition hover:bg-white/[0.04]"
-              >
-                <td className="py-3 pr-3 font-semibold text-slate-500">{index + 1}</td>
-                <td className="px-3 py-3 font-semibold text-white">{item.company.name}</td>
-                <td className="px-3 py-3">{item.company.sector}</td>
-                <td className="px-3 py-3">{item.company.sgx_identifier}</td>
-                <td className="px-3 py-3 text-right font-semibold text-teal">{formatNumber(item.dataset?.total_signal_score)}</td>
-                <td className="px-3 py-3 text-right">{item.dataset?.total_signal_count ?? 0}</td>
-                <td className="px-3 py-3 text-right">{formatNumber(categoryScore(item.dataset, "Environmental"))}</td>
-                <td className="px-3 py-3 text-right">{formatNumber(categoryScore(item.dataset, "Social"))}</td>
-                <td className="px-3 py-3 text-right">{formatNumber(categoryScore(item.dataset, "Governance"))}</td>
-                <td className="px-3 py-3 text-right">{formatPercent(item.dataset?.average_confidence)}</td>
-                <td className="py-3 pl-3">
-                  <MomentumBadge classification={item.classification} />
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className="mt-4 space-y-2">
+        <div className="hidden grid-cols-[2.4rem_minmax(150px,1.5fr)_minmax(110px,0.9fr)_72px_78px_58px_minmax(118px,1fr)_70px_minmax(112px,0.8fr)] items-center gap-2 px-3 text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-500 xl:grid">
+          <span>Rank</span>
+          <span>Company</span>
+          <span>Sector</span>
+          <span>SGX</span>
+          <span className="text-right">Score</span>
+          <span className="text-right">Signals</span>
+          <span className="text-right">E / S / G</span>
+          <span className="text-right">Conf.</span>
+          <span>Class</span>
+        </div>
+
+        {rows.map((item, index) => {
+          const environmentalScore = formatNumber(categoryScore(item.dataset, "Environmental"));
+          const socialScore = formatNumber(categoryScore(item.dataset, "Social"));
+          const governanceScore = formatNumber(categoryScore(item.dataset, "Governance"));
+
+          return (
+            <button
+              key={item.company.company_id}
+              type="button"
+              onClick={() => navigateTo(`/company/${item.company.company_id}`)}
+              className="grid w-full gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-3 text-left text-sm text-slate-300 transition hover:border-teal/35 hover:bg-white/[0.06] xl:grid-cols-[2.4rem_minmax(150px,1.5fr)_minmax(110px,0.9fr)_72px_78px_58px_minmax(118px,1fr)_70px_minmax(112px,0.8fr)] xl:items-center xl:gap-2 xl:py-2"
+            >
+              <div className="flex items-center justify-between gap-3 xl:block">
+                <span className="text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Rank</span>
+                <span className="font-semibold text-slate-400">{index + 1}</span>
+              </div>
+
+              <div className="min-w-0">
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Company</span>
+                <span className="block truncate font-semibold text-white">{item.company.name}</span>
+              </div>
+
+              <div className="min-w-0">
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Sector</span>
+                <span className="block truncate text-slate-300">{item.company.sector}</span>
+              </div>
+
+              <div>
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">SGX</span>
+                <span className="text-slate-300">{item.company.sgx_identifier}</span>
+              </div>
+
+              <div className="xl:text-right">
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Momentum Score</span>
+                <span className="font-semibold text-teal">{formatNumber(item.dataset?.total_signal_score)}</span>
+              </div>
+
+              <div className="xl:text-right">
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Signals</span>
+                <span>{item.dataset?.total_signal_count ?? 0}</span>
+              </div>
+
+              <div className="xl:text-right">
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Environmental / Social / Governance</span>
+                <span className="whitespace-nowrap text-xs text-slate-300">
+                  <span className="text-environmental">{environmentalScore}</span>
+                  <span className="text-slate-600"> / </span>
+                  <span className="text-social">{socialScore}</span>
+                  <span className="text-slate-600"> / </span>
+                  <span className="text-governance">{governanceScore}</span>
+                </span>
+              </div>
+
+              <div className="xl:text-right">
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Average Confidence</span>
+                <span>{formatPercent(item.dataset?.average_confidence)}</span>
+              </div>
+
+              <div>
+                <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Classification</span>
+                <MomentumBadge classification={item.classification} />
+              </div>
+            </button>
+          );
+        })}
       </div>
     </section>
   );

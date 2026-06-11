@@ -35,9 +35,9 @@ function NavButton({
 export function Layout({ route, children }: LayoutProps) {
   return (
     <div className="min-h-screen">
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 border-r border-white/10 bg-midnight/90 p-5 backdrop-blur-xl lg:block">
+      <aside className="fixed inset-y-0 left-0 z-30 hidden w-60 border-r border-white/10 bg-midnight/95 p-5 backdrop-blur-xl lg:block">
         <button type="button" onClick={() => navigateTo("/")} className="flex items-center gap-3 text-left">
-          <div className="rounded-xl border border-teal/25 bg-teal/10 p-2 text-teal">
+          <div className="rounded-lg border border-teal/25 bg-teal/10 p-2 text-teal">
             <Radar className="h-6 w-6" />
           </div>
           <div>
@@ -52,12 +52,12 @@ export function Layout({ route, children }: LayoutProps) {
           <NavButton active={route.name === "company"} icon={Building2} label="Company Detail" onClick={() => navigateTo("/")} />
         </nav>
 
-        <div className="absolute bottom-5 left-5 right-5 rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-slate-400">
+        <div className="absolute bottom-5 left-5 right-5 rounded-lg border border-white/10 bg-white/5 p-4 text-xs text-slate-400">
           Prototype ESG intelligence signal for research screening only; not investment advice.
         </div>
       </aside>
 
-      <div className="lg:pl-64">
+      <div className="lg:pl-60">
         <header className="sticky top-0 z-20 border-b border-white/10 bg-midnight/75 px-4 py-3 backdrop-blur-xl sm:px-6 lg:hidden">
           <div className="flex items-center justify-between gap-3">
             <button type="button" onClick={() => navigateTo("/")} className="flex items-center gap-2 text-sm font-semibold text-white">
@@ -69,7 +69,7 @@ export function Layout({ route, children }: LayoutProps) {
             </button>
           </div>
         </header>
-        <main className="mx-auto max-w-[1480px] px-4 py-6 sm:px-6 lg:px-8">{children}</main>
+        <main className="mx-auto max-w-[1440px] px-4 py-5 sm:px-6 lg:px-7">{children}</main>
       </div>
     </div>
   );

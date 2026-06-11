@@ -4,18 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        midnight: "#061421",
-        ink: "#0a1d2e",
-        panel: "rgba(11, 31, 49, 0.78)",
-        teal: "#2dd4bf",
-        environmental: "#34d399",
-        social: "#60a5fa",
-        governance: "#a78bfa",
+        midnight: "#0b0f14",
+        ink: "#111827",
+        panel: "rgba(17, 24, 39, 0.86)",
+        teal: "#22c55e",
+        gold: "#fbbf24",
+        environmental: "#22c55e",
+        social: "#38bdf8",
+        governance: "#c084fc",
         warning: "#f59e0b",
         danger: "#fb7185",
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(45, 212, 191, 0.18), 0 24px 70px rgba(0, 0, 0, 0.35)",
+        glow: "0 0 0 1px rgba(255, 255, 255, 0.06), 0 18px 48px rgba(0, 0, 0, 0.28)",
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],

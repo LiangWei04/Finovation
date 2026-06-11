@@ -36,7 +36,7 @@ export function Dashboard({ data, analytics }: DashboardProps) {
         windowLabel={scopeWindow(data.scope)}
       />
 
-      <div className="mb-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-6">
+      <div className="mb-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6">
         <KpiCard label="Total Companies" value={formatInteger(kpis.totalCompanies)} icon={Building2} />
         <KpiCard label="Total ESG Signals" value={formatInteger(kpis.totalSignals)} icon={Activity} />
         <KpiCard label="Positive Signal %" value={formatPercent(kpis.positiveSignalPercent)} icon={TrendingUp} />
@@ -45,19 +45,23 @@ export function Dashboard({ data, analytics }: DashboardProps) {
         <KpiCard label="Unique Source Count" value={formatInteger(kpis.uniqueSourceCount)} icon={Database} />
       </div>
 
-      <div className="mb-6 grid gap-4 xl:grid-cols-3">
+      <div className="mb-5 grid gap-3 lg:grid-cols-3 2xl:grid-cols-6">
         {insights.map((insight) => (
-          <div key={insight.label} className="glass-panel rounded-xl p-4">
+          <div key={insight.label} className="glass-panel rounded-lg p-3">
             <p className="label">{insight.label}</p>
-            <p className="mt-3 text-lg font-semibold text-white">{insight.value}</p>
+            <p className="mt-2 truncate text-base font-semibold text-white">{insight.value}</p>
             <p className="mt-1 text-sm text-slate-400">{insight.detail}</p>
           </div>
         ))}
       </div>
 
-      <div className="mb-6 grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+      <div className="mb-5">
+        <RankingTable analytics={analytics} />
+      </div>
+
+      <div className="grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
         <ChartCard title="ESG Category Overview" subtitle="Signal counts and evidence-weighted scores from structured ESG signals.">
-          <div className="h-72">
+          <div className="h-56">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={overview} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} />
@@ -65,7 +69,9 @@ export function Dashboard({ data, analytics }: DashboardProps) {
                 <YAxis stroke="#94a3b8" tickLine={false} axisLine={false} allowDecimals={false} />
                 <Tooltip
                   cursor={{ fill: "rgba(255,255,255,0.04)" }}
-                  contentStyle={{ background: "#0a1d2e", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }}
+                  contentStyle={{ background: "#111827", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8 }}
+                  labelStyle={{ color: "#e5e7eb", fontWeight: 600 }}
+                  itemStyle={{ color: "#e5e7eb" }}
                 />
                 <Bar dataKey="count" name="Signals" radius={[6, 6, 0, 0]}>
                   {overview.map((entry) => (
@@ -77,7 +83,7 @@ export function Dashboard({ data, analytics }: DashboardProps) {
           </div>
           <div className="mt-4 grid gap-3 md:grid-cols-3">
             {overview.map((item) => (
-              <div key={item.category} className="rounded-xl border border-white/10 bg-white/5 p-3">
+              <div key={item.category} className="rounded-lg border border-white/10 bg-white/5 p-3">
                 <div className="flex items-center gap-2">
                   <BarChart3 className="h-4 w-4" style={{ color: categoryColor(item.category) }} />
                   <p className="font-semibold text-white">{item.category}</p>
@@ -86,7 +92,7 @@ export function Dashboard({ data, analytics }: DashboardProps) {
                   {item.count}
                 </p>
                 <p className="text-xs text-slate-400">
-                  {item.positive} positive, {item.negative} negative · score {formatNumber(item.score)}
+                  {item.positive} positive, {item.negative} negative - score {formatNumber(item.score)}
                 </p>
               </div>
             ))}
@@ -96,18 +102,18 @@ export function Dashboard({ data, analytics }: DashboardProps) {
         <ChartCard title="Momentum Matrix" subtitle="Classification uses initial ESG scores plus recent evidence momentum where enough trend history exists.">
           <div className="grid gap-3 md:grid-cols-2">
             {(["Hidden Winners", "Future Leaders", "Value Traps", "Overrated Leaders"] as MomentumClassification[]).map((classification) => (
-              <div key={classification} className="min-h-44 rounded-xl border border-white/10 bg-white/5 p-4">
+              <div key={classification} className="min-h-36 rounded-lg border border-white/10 bg-white/5 p-3">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <MomentumBadge classification={classification} />
                   <span className="text-xs text-slate-500">{groups[classification].length} companies</span>
                 </div>
-                <p className="mt-3 text-xs leading-5 text-slate-400">{matrixDescriptions[classification]}</p>
-                <div className="mt-4 space-y-2">
-                  {groups[classification].slice(0, 4).map((item) => (
-                    <div key={item.company.company_id} className="rounded-lg border border-white/10 bg-midnight/40 px-3 py-2">
+                <p className="mt-2 text-xs leading-5 text-slate-400">{matrixDescriptions[classification]}</p>
+                <div className="mt-3 space-y-2">
+                  {groups[classification].slice(0, 2).map((item) => (
+                    <div key={item.company.company_id} className="rounded-md border border-white/10 bg-midnight/40 px-3 py-2">
                       <p className="text-sm font-semibold text-white">{item.company.name}</p>
                       <p className="text-xs text-slate-400">
-                        {item.trendLabel} · {item.dataset ? formatNumber(item.dataset.total_signal_score) : "No"} signal score
+                        {item.trendLabel} - {item.dataset ? formatNumber(item.dataset.total_signal_score) : "No"} signal score
                       </p>
                     </div>
                   ))}
@@ -117,8 +123,6 @@ export function Dashboard({ data, analytics }: DashboardProps) {
           </div>
         </ChartCard>
       </div>
-
-      <RankingTable analytics={analytics} />
     </>
   );
 }
