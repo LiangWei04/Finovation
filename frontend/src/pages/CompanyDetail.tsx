@@ -107,7 +107,7 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
           </div>
         </ChartCard>
 
-        <ChartCard title="ESG Trend Line Chart" subtitle="Quarterly evidence signal trend; not a formal ESG rating trend.">
+        <ChartCard title="ESG Trend Line Chart" subtitle="Half-year evidence signal trend; not a formal ESG rating trend.">
           {trendData.length > 1 ? (
             <div className="h-72">
               <ResponsiveContainer width="100%" height="100%">
@@ -121,7 +121,7 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
                     itemStyle={{ color: "#e5e7eb" }}
                   />
                   <Legend />
-                  <Line type="monotone" dataKey="Total signal score" stroke="#22c55e" strokeWidth={2} dot={{ r: 3 }} />
+                  <Line type="monotone" dataKey="Total signal score" stroke="#f59e0b" strokeWidth={2.5} dot={{ r: 3 }} />
                   <Line type="monotone" dataKey="Environmental" stroke="#22c55e" strokeWidth={2} dot={{ r: 3 }} />
                   <Line type="monotone" dataKey="Social" stroke="#38bdf8" strokeWidth={2} dot={{ r: 3 }} />
                   <Line type="monotone" dataKey="Governance" stroke="#c084fc" strokeWidth={2} dot={{ r: 3 }} />
@@ -192,9 +192,14 @@ export function CompanyDetail({ data, analytics }: CompanyDetailProps) {
                 timeRelevance={signal.time_relevance}
                 evidenceSummary={signal.evidence_summary}
                 evidenceQuote={signal.evidence_quote}
+                evidenceBasis={signal.evidence_basis}
                 publishedDate={signal.published_date}
                 sourcePlatform={signal.source_platform}
+                sourceStatus={signal.source_status}
+                sourceNote={signal.source_note}
+                sourceLinkType={signal.source_link_type}
                 url={signal.url}
+                clickableUrl={signal.clickable_url}
               />
             ))}
           </div>

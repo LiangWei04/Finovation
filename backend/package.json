@@ -1,0 +1,27 @@
+{
+  "name": "esg-momentum-radar-data-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Prototype data workflow for ESG Momentum Radar: seed web collection, raw source storage, and ESG signal extraction.",
+  "scripts": {
+    "collect": "tsx scripts/collect_sources.ts",
+    "extract": "tsx scripts/extract_signals.ts",
+    "dataset": "tsx scripts/build_structured_dataset.ts",
+    "trends": "tsx scripts/calculate_trends.ts",
+    "sync-frontend-data": "tsx scripts/sync_frontend_data.ts",
+    "pipeline": "npm run collect && npm run extract && npm run dataset && npm run trends",
+    "validate": "tsx scripts/validate_outputs.ts",
+    "qa": "tsx scripts/qa_feedback_loop.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -18,6 +18,9 @@ export type EsgCategory = "Environmental" | "Social" | "Governance";
 export type SignalDirection = "positive" | "negative" | "neutral";
 
 export type TimeRelevance = "backward-looking" | "current" | "forward-looking";
+export type ExtractionStatus = "success" | "failed" | "skipped_unchanged" | "fallback_seeded";
+export type SourceLinkType = "direct" | "reference_only" | "unavailable";
+export type EvidenceBasis = "scraped_text" | "seeded_prototype_text";
 
 export interface Company {
   company_id: string;
@@ -42,12 +45,17 @@ export interface EsgSignal {
   time_relevance: TimeRelevance;
   evidence_summary: string;
   evidence_quote: string;
+  evidence_basis?: EvidenceBasis;
   source_reliability: number;
   weighted_signal_score: number;
   published_date?: string;
   time_window: string;
   source_platform: SourcePlatform;
+  source_status?: ExtractionStatus;
+  source_note?: string;
+  source_link_type?: SourceLinkType;
   url?: string;
+  clickable_url?: string;
   prototype_disclaimer: string;
 }
 
@@ -56,6 +64,7 @@ export interface EsgTrendPoint {
   company_name: string;
   sector: string;
   period: string;
+  period_granularity?: "half-year";
   period_start: string;
   period_end: string;
   environmental_score: number;
@@ -89,9 +98,14 @@ export interface EsgCategoryDatasetSummary {
     confidence: number;
     evidence_summary: string;
     evidence_quote: string;
+    evidence_basis?: EvidenceBasis;
     published_date?: string;
     source_platform: SourcePlatform;
+    source_status?: ExtractionStatus;
+    source_note?: string;
+    source_link_type?: SourceLinkType;
     url?: string;
+    clickable_url?: string;
   }>;
 }
 

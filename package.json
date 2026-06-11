@@ -1,31 +1,25 @@
 {
-  "name": "esg-momentum-radar-data-pipeline",
+  "name": "esg-momentum-radar",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
-  "description": "Prototype data workflow for ESG Momentum Radar: seed web collection, raw source storage, and ESG signal extraction.",
+  "description": "ESG Momentum Radar prototype with separate backend data pipeline and frontend dashboard.",
   "scripts": {
-    "collect": "tsx scripts/collect_sources.ts",
-    "extract": "tsx scripts/extract_signals.ts",
-    "dataset": "tsx scripts/build_structured_dataset.ts",
-    "trends": "tsx scripts/calculate_trends.ts",
-    "pipeline": "npm run collect && npm run extract && npm run dataset && npm run trends",
-    "validate": "tsx scripts/validate_outputs.ts",
-    "qa": "tsx scripts/qa_feedback_loop.ts",
-    "check": "tsc --noEmit",
+    "backend:install": "npm --prefix backend install",
+    "backend:collect": "npm --prefix backend run collect",
+    "backend:extract": "npm --prefix backend run extract",
+    "backend:dataset": "npm --prefix backend run dataset",
+    "backend:trends": "npm --prefix backend run trends",
+    "backend:pipeline": "npm --prefix backend run pipeline",
+    "backend:validate": "npm --prefix backend run validate",
+    "backend:qa": "npm --prefix backend run qa",
+    "backend:check": "npm --prefix backend run check",
     "frontend:install": "npm --prefix frontend install",
-    "frontend:sync-data": "tsx scripts/sync_frontend_data.ts",
+    "frontend:sync-data": "npm --prefix backend run sync-frontend-data",
     "frontend:dev": "npm --prefix frontend run dev",
     "frontend:build": "npm --prefix frontend run build",
-    "frontend:preview": "npm --prefix frontend run preview"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "openai": "^4.77.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.10.2",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "frontend:preview": "npm --prefix frontend run preview",
+    "check": "npm run backend:check && npm --prefix frontend run build",
+    "validate": "npm run backend:validate && npm run backend:qa",
+    "pipeline": "npm run backend:pipeline && npm run frontend:sync-data"
   }
 }

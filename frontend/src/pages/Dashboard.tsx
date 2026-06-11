@@ -3,6 +3,7 @@ import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis
 import { categoryOverview, computeInsights, computeKpis, matrixGroups, scopeWindow } from "../lib/analytics";
 import { categoryColor, formatInteger, formatNumber, formatPercent } from "../lib/format";
 import type { CompanyAnalytics, EsgDataBundle, MomentumClassification } from "../types/esg";
+import { AnalystNotes } from "../components/AnalystNotes";
 import { ChartCard } from "../components/ChartCard";
 import { Header } from "../components/Header";
 import { KpiCard } from "../components/KpiCard";
@@ -45,18 +46,9 @@ export function Dashboard({ data, analytics }: DashboardProps) {
         <KpiCard label="Unique Source Count" value={formatInteger(kpis.uniqueSourceCount)} icon={Database} />
       </div>
 
-      <div className="mb-5 grid gap-3 lg:grid-cols-3 2xl:grid-cols-6">
-        {insights.map((insight) => (
-          <div key={insight.label} className="glass-panel rounded-lg p-3">
-            <p className="label">{insight.label}</p>
-            <p className="mt-2 truncate text-base font-semibold text-white">{insight.value}</p>
-            <p className="mt-1 text-sm text-slate-400">{insight.detail}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="mb-5">
+      <div className="mb-5 grid gap-5 xl:grid-cols-[minmax(0,1.35fr)_minmax(360px,0.75fr)]">
         <RankingTable analytics={analytics} />
+        <AnalystNotes notes={insights} />
       </div>
 
       <div className="grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
@@ -99,30 +91,63 @@ export function Dashboard({ data, analytics }: DashboardProps) {
           </div>
         </ChartCard>
 
-        <ChartCard title="Momentum Matrix" subtitle="Classification uses initial ESG scores plus recent evidence momentum where enough trend history exists.">
-          <div className="grid gap-3 md:grid-cols-2">
-            {(["Hidden Winners", "Future Leaders", "Value Traps", "Overrated Leaders"] as MomentumClassification[]).map((classification) => (
-              <div key={classification} className="min-h-36 rounded-lg border border-white/10 bg-white/5 p-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <MomentumBadge classification={classification} />
-                  <span className="text-xs text-slate-500">{groups[classification].length} companies</span>
-                </div>
-                <p className="mt-2 text-xs leading-5 text-slate-400">{matrixDescriptions[classification]}</p>
-                <div className="mt-3 space-y-2">
-                  {groups[classification].slice(0, 2).map((item) => (
-                    <div key={item.company.company_id} className="rounded-md border border-white/10 bg-midnight/40 px-3 py-2">
-                      <p className="text-sm font-semibold text-white">{item.company.name}</p>
-                      <p className="text-xs text-slate-400">
-                        {item.trendLabel} - {item.dataset ? formatNumber(item.dataset.total_signal_score) : "No"} signal score
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+        <ChartCard title="Momentum Matrix" subtitle="X-axis: current ESG score. Y-axis: recent evidence momentum.">
+          <div className="grid grid-cols-[1.1rem_minmax(0,1fr)] gap-2">
+            <div className="flex items-center justify-center">
+              <span className="-rotate-90 whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500">Improving</span>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              {(["Hidden Winners", "Future Leaders"] as MomentumClassification[]).map((classification) => (
+                <MatrixQuadrant key={classification} classification={classification} description={matrixDescriptions[classification]} companies={groups[classification]} />
+              ))}
+            </div>
+            <div className="flex items-center justify-center">
+              <span className="-rotate-90 whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500">Weak</span>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              {(["Value Traps", "Overrated Leaders"] as MomentumClassification[]).map((classification) => (
+                <MatrixQuadrant key={classification} classification={classification} description={matrixDescriptions[classification]} companies={groups[classification]} />
+              ))}
+            </div>
+            <div />
+            <div className="grid grid-cols-2 gap-3 text-center text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500">
+              <span>Lower Current ESG</span>
+              <span>Higher Current ESG</span>
+            </div>
           </div>
         </ChartCard>
       </div>
     </>
+  );
+}
+
+function MatrixQuadrant({
+  classification,
+  description,
+  companies,
+}: {
+  classification: MomentumClassification;
+  description: string;
+  companies: CompanyAnalytics[];
+}) {
+  return (
+    <div className="min-h-40 rounded-lg border border-white/10 bg-white/[0.035] p-3">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <MomentumBadge classification={classification} />
+        <span className="text-xs text-slate-500">{companies.length}</span>
+      </div>
+      <p className="mt-2 text-xs leading-5 text-slate-400">{description}</p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {companies.length ? (
+          companies.map((item) => (
+            <span key={item.company.company_id} className="rounded-full border border-white/10 bg-midnight/50 px-2.5 py-1 text-xs text-slate-200">
+              {item.company.name}
+            </span>
+          ))
+        ) : (
+          <span className="text-xs text-slate-500">No companies in this quadrant</span>
+        )}
+      </div>
+    </div>
   );
 }

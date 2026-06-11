@@ -80,29 +80,21 @@ export function RankingTable({ analytics }: RankingTableProps) {
       </FilterBar>
 
       <div className="mt-4 space-y-2">
-        <div className="hidden grid-cols-[2.4rem_minmax(150px,1.5fr)_minmax(110px,0.9fr)_72px_78px_58px_minmax(118px,1fr)_70px_minmax(112px,0.8fr)] items-center gap-2 px-3 text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-500 xl:grid">
+        <div className="hidden grid-cols-[2.4rem_minmax(190px,1.6fr)_minmax(120px,0.9fr)_78px_58px] items-center gap-3 px-3 text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-500 xl:grid">
           <span>Rank</span>
           <span>Company</span>
           <span>Sector</span>
-          <span>SGX</span>
           <span className="text-right">Score</span>
           <span className="text-right">Signals</span>
-          <span className="text-right">E / S / G</span>
-          <span className="text-right">Conf.</span>
-          <span>Class</span>
         </div>
 
         {rows.map((item, index) => {
-          const environmentalScore = formatNumber(categoryScore(item.dataset, "Environmental"));
-          const socialScore = formatNumber(categoryScore(item.dataset, "Social"));
-          const governanceScore = formatNumber(categoryScore(item.dataset, "Governance"));
-
           return (
             <button
               key={item.company.company_id}
               type="button"
               onClick={() => navigateTo(`/company/${item.company.company_id}`)}
-              className="grid w-full gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-3 text-left text-sm text-slate-300 transition hover:border-teal/35 hover:bg-white/[0.06] xl:grid-cols-[2.4rem_minmax(150px,1.5fr)_minmax(110px,0.9fr)_72px_78px_58px_minmax(118px,1fr)_70px_minmax(112px,0.8fr)] xl:items-center xl:gap-2 xl:py-2"
+              className="grid w-full gap-3 overflow-hidden rounded-lg border border-white/10 bg-white/[0.035] p-3 text-left text-sm text-slate-300 transition hover:border-teal/35 hover:bg-white/[0.06] xl:grid-cols-[2.4rem_minmax(190px,1.6fr)_minmax(120px,0.9fr)_78px_58px] xl:items-center xl:gap-3 xl:py-2"
             >
               <div className="flex items-center justify-between gap-3 xl:block">
                 <span className="text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Rank</span>
@@ -112,6 +104,10 @@ export function RankingTable({ analytics }: RankingTableProps) {
               <div className="min-w-0">
                 <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Company</span>
                 <span className="block truncate font-semibold text-white">{item.company.name}</span>
+                <span className="mt-1 hidden items-center gap-2 xl:flex">
+                  <span className="text-xs text-slate-500">{item.company.sgx_identifier}</span>
+                  <MomentumBadge classification={item.classification} compact />
+                </span>
               </div>
 
               <div className="min-w-0">
@@ -119,7 +115,7 @@ export function RankingTable({ analytics }: RankingTableProps) {
                 <span className="block truncate text-slate-300">{item.company.sector}</span>
               </div>
 
-              <div>
+              <div className="xl:hidden">
                 <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">SGX</span>
                 <span className="text-slate-300">{item.company.sgx_identifier}</span>
               </div>
@@ -134,23 +130,23 @@ export function RankingTable({ analytics }: RankingTableProps) {
                 <span>{item.dataset?.total_signal_count ?? 0}</span>
               </div>
 
-              <div className="xl:text-right">
+              <div className="xl:hidden">
                 <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Environmental / Social / Governance</span>
                 <span className="whitespace-nowrap text-xs text-slate-300">
-                  <span className="text-environmental">{environmentalScore}</span>
+                  <span className="text-environmental">{formatNumber(categoryScore(item.dataset, "Environmental"))}</span>
                   <span className="text-slate-600"> / </span>
-                  <span className="text-social">{socialScore}</span>
+                  <span className="text-social">{formatNumber(categoryScore(item.dataset, "Social"))}</span>
                   <span className="text-slate-600"> / </span>
-                  <span className="text-governance">{governanceScore}</span>
+                  <span className="text-governance">{formatNumber(categoryScore(item.dataset, "Governance"))}</span>
                 </span>
               </div>
 
-              <div className="xl:text-right">
+              <div className="xl:hidden">
                 <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Average Confidence</span>
                 <span>{formatPercent(item.dataset?.average_confidence)}</span>
               </div>
 
-              <div>
+              <div className="min-w-0 xl:hidden">
                 <span className="mb-1 block text-xs uppercase tracking-[0.1em] text-slate-500 xl:hidden">Classification</span>
                 <MomentumBadge classification={item.classification} />
               </div>

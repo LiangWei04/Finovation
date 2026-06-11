@@ -9,11 +9,12 @@ const badgeClasses: Record<MomentumClassification, string> = {
 
 interface MomentumBadgeProps {
   classification: MomentumClassification;
+  compact?: boolean;
 }
 
-export function MomentumBadge({ classification }: MomentumBadgeProps) {
+export function MomentumBadge({ classification, compact = false }: MomentumBadgeProps) {
   return (
-    <span className={`inline-flex whitespace-nowrap rounded-full border px-2 py-1 text-[11px] font-semibold ${badgeClasses[classification]}`}>
+    <span className={`inline-flex whitespace-nowrap rounded-full border font-semibold ${compact ? "px-1.5 py-0.5 text-[10px]" : "px-2 py-1 text-[11px]"} ${badgeClasses[classification]}`}>
       {classification}
     </span>
   );

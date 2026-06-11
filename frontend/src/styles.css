@@ -17,10 +17,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: #e5edf6;
-  background:
-    radial-gradient(circle at 14% 8%, rgba(34, 197, 94, 0.12), transparent 24rem),
-    radial-gradient(circle at 86% 0%, rgba(251, 191, 36, 0.1), transparent 22rem),
-    linear-gradient(135deg, #0b0f14 0%, #111827 52%, #171b22 100%);
+  background: linear-gradient(135deg, #0b0f14 0%, #10161f 54%, #111827 100%);
 }
 
 a {
@@ -35,7 +32,7 @@ select {
 
 @layer components {
   .glass-panel {
-    @apply border border-white/10 bg-panel shadow-glow backdrop-blur-md;
+    @apply border border-white/10 bg-panel shadow-glow;
   }
 
   .control {

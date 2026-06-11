@@ -1,4 +1,4 @@
-import { BarChart3, Building2, Database, Radar } from "lucide-react";
+import { BarChart3, Database, Radar } from "lucide-react";
 import type { ReactNode } from "react";
 import { navigateTo, type Route } from "../routes/router";
 
@@ -49,7 +49,6 @@ export function Layout({ route, children }: LayoutProps) {
         <nav className="mt-8 space-y-2">
           <NavButton active={route.name === "dashboard"} icon={BarChart3} label="Dashboard" onClick={() => navigateTo("/")} />
           <NavButton active={route.name === "evidence"} icon={Database} label="Evidence Explorer" onClick={() => navigateTo("/evidence")} />
-          <NavButton active={route.name === "company"} icon={Building2} label="Company Detail" onClick={() => navigateTo("/")} />
         </nav>
 
         <div className="absolute bottom-5 left-5 right-5 rounded-lg border border-white/10 bg-white/5 p-4 text-xs text-slate-400">

@@ -160,50 +160,81 @@ function maxBy<T>(items: T[], score: (item: T) => number): T | undefined {
   }, undefined);
 }
 
+function minBy<T>(items: T[], score: (item: T) => number): T | undefined {
+  return items.reduce<T | undefined>((best, item) => {
+    if (!best || score(item) < score(best)) return item;
+    return best;
+  }, undefined);
+}
+
+function dominantCategory(item: CompanyAnalytics) {
+  const scores = categories.map((category) => ({
+    category,
+    score: categoryScore(item.dataset, category),
+  }));
+  return maxBy(scores, (entry) => entry.score);
+}
+
+function categoryImbalance(item: CompanyAnalytics) {
+  const scores = categories.map((category) => categoryScore(item.dataset, category));
+  return Math.max(...scores) - Math.min(...scores);
+}
+
 export function computeInsights(data: EsgDataBundle, analytics: CompanyAnalytics[]) {
-  const categoryCounts = categoryOverview(data.signals);
-  const highestMomentum = maxBy(analytics, (item) => item.dataset?.total_signal_score ?? Number.NEGATIVE_INFINITY);
-  const mostEvidence = maxBy(analytics, (item) => item.dataset?.total_signal_count ?? Number.NEGATIVE_INFINITY);
-  const highestConfidence = maxBy(analytics, (item) => item.dataset?.average_confidence ?? Number.NEGATIVE_INFINITY);
-  const strongestGovernance = maxBy(analytics, (item) => categoryScore(item.dataset, "Governance"));
-  const diversifiedCoverage = maxBy(analytics, (item) => {
-    const coveredCategories = categories.filter((category) => categorySignalCount(item.dataset, category) > 0).length;
-    return coveredCategories * 100 + (item.dataset?.source_count ?? 0);
-  });
-  const mostCommonCategory = maxBy(categoryCounts, (item) => item.count);
+  const fallbackSignals = data.signals.filter((signal) => signal.source_status === "fallback_seeded").length;
+  const hiddenWinnerCandidate = maxBy(
+    analytics.filter((item) => item.classification === "Hidden Winners"),
+    (item) => item.dataset?.total_signal_score ?? Number.NEGATIVE_INFINITY,
+  );
+  const riskFlagCandidate = maxBy(
+    analytics.filter((item) => item.classification === "Overrated Leaders" || item.classification === "Value Traps"),
+    (item) => Math.abs(item.recentMomentum ?? 0) + (1 - item.positiveRatio),
+  );
+  const lowestConfidence = minBy(analytics, (item) => item.dataset?.average_confidence ?? Number.POSITIVE_INFINITY);
+  const broadestCoverage = maxBy(analytics, (item) => (item.dataset?.source_count ?? 0) + (item.dataset?.total_signal_count ?? 0) / 10);
+  const largestImbalance = maxBy(analytics, categoryImbalance);
+  const bestTrendCoverage = maxBy(analytics, (item) => item.trends.length);
 
   return [
     {
-      label: "Highest momentum company",
-      value: highestMomentum?.company.name ?? "N/A",
-      detail: highestMomentum?.dataset ? `${highestMomentum.dataset.total_signal_score.toFixed(2)} evidence signal score` : "No score available",
+      label: "Best hidden-winner lead",
+      value: hiddenWinnerCandidate?.company.name ?? "No strong lead",
+      detail: hiddenWinnerCandidate?.dataset
+        ? `${hiddenWinnerCandidate.dataset.total_signal_score.toFixed(2)} score with ${Math.round(hiddenWinnerCandidate.positiveRatio * 100)}% positive evidence`
+        : "No low-score improver stands out yet",
     },
     {
-      label: "Most evidence-backed company",
-      value: mostEvidence?.company.name ?? "N/A",
-      detail: mostEvidence?.dataset ? `${mostEvidence.dataset.total_signal_count} signals` : "No evidence available",
+      label: "Primary risk flag",
+      value: riskFlagCandidate?.company.name ?? "No major flag",
+      detail: riskFlagCandidate
+        ? `${riskFlagCandidate.classification}; ${Math.round(riskFlagCandidate.positiveRatio * 100)}% positive signal mix`
+        : "No deteriorating profile dominates",
     },
     {
-      label: "Highest confidence company",
-      value: highestConfidence?.company.name ?? "N/A",
-      detail: highestConfidence?.dataset ? `${Math.round(highestConfidence.dataset.average_confidence * 100)}% average confidence` : "No confidence available",
+      label: "Evidence-quality caveat",
+      value: lowestConfidence?.company.name ?? "N/A",
+      detail: lowestConfidence?.dataset
+        ? `Lowest confidence at ${Math.round(lowestConfidence.dataset.average_confidence * 100)}%; review before pitching`
+        : "No confidence data available",
     },
     {
-      label: "Most common ESG category",
-      value: mostCommonCategory?.category ?? "N/A",
-      detail: mostCommonCategory ? `${mostCommonCategory.count} signals` : "No signals available",
+      label: "Most evidence-backed view",
+      value: broadestCoverage?.company.name ?? "N/A",
+      detail: broadestCoverage?.dataset
+        ? `${broadestCoverage.dataset.total_signal_count} signals across ${broadestCoverage.dataset.source_count} sources`
+        : "No evidence coverage available",
     },
     {
-      label: "Strongest governance momentum",
-      value: strongestGovernance?.company.name ?? "N/A",
-      detail: strongestGovernance?.dataset ? `${categoryScore(strongestGovernance.dataset, "Governance").toFixed(2)} governance score` : "No governance score available",
+      label: "Largest E/S/G imbalance",
+      value: largestImbalance?.company.name ?? "N/A",
+      detail: largestImbalance
+        ? `${dominantCategory(largestImbalance)?.category ?? "Unknown"} dominates; check whether one pillar is masking weakness`
+        : "No imbalance data available",
     },
     {
-      label: "Most diversified signal coverage",
-      value: diversifiedCoverage?.company.name ?? "N/A",
-      detail: diversifiedCoverage?.dataset
-        ? `${categories.filter((category) => categorySignalCount(diversifiedCoverage.dataset, category) > 0).length}/3 categories, ${diversifiedCoverage.dataset.source_count} sources`
-        : "No coverage available",
+      label: "Trend-readiness check",
+      value: bestTrendCoverage?.company.name ?? "N/A",
+      detail: `${bestTrendCoverage?.trends.length ?? 0} half-year points; ${Math.round((fallbackSignals / Math.max(data.signals.length, 1)) * 100)}% fallback-labelled signals overall`,
     },
   ];
 }

@@ -9,7 +9,7 @@ interface KpiCardProps {
 
 export function KpiCard({ label, value, icon: Icon, detail }: KpiCardProps) {
   return (
-    <div className="glass-panel rounded-lg p-3 transition hover:border-teal/35">
+    <div className="glass-panel rounded-lg p-3">
       <div className="flex items-center justify-between gap-3">
         <p className="label">{label}</p>
         <div className="rounded-md border border-teal/20 bg-teal/10 p-1.5 text-teal">

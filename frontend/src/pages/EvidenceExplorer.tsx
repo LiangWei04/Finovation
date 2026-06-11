@@ -1,11 +1,12 @@
 import { Search } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { categories, scopeWindow } from "../lib/analytics";
 import type { EsgDataBundle, SignalDirection, SourcePlatform } from "../types/esg";
 import { EmptyState } from "../components/EmptyState";
 import { EvidenceCard } from "../components/EvidenceCard";
 import { FilterBar } from "../components/FilterBar";
 import { Header } from "../components/Header";
+import { PaginationControls } from "../components/PaginationControls";
 
 type SortKey = "confidence" | "weightedSignalScore" | "publishedDate";
 
@@ -20,6 +21,8 @@ export function EvidenceExplorer({ data }: EvidenceExplorerProps) {
   const [direction, setDirection] = useState("all");
   const [platform, setPlatform] = useState("all");
   const [sortKey, setSortKey] = useState<SortKey>("confidence");
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(12);
 
   const companyById = useMemo(() => new Map(data.companies.map((company) => [company.company_id, company])), [data.companies]);
   const platforms = useMemo(() => Array.from(new Set(data.signals.map((signal) => signal.source_platform))).sort(), [data.signals]);
@@ -47,6 +50,26 @@ export function EvidenceExplorer({ data }: EvidenceExplorerProps) {
         return b.confidence - a.confidence;
       });
   }, [category, companyId, data.signals, direction, platform, search, sortKey]);
+
+  const pageCount = Math.max(1, Math.ceil(filteredSignals.length / pageSize));
+  const currentPage = Math.min(page, pageCount);
+  const pagedSignals = useMemo(
+    () => filteredSignals.slice((currentPage - 1) * pageSize, currentPage * pageSize),
+    [currentPage, filteredSignals, pageSize],
+  );
+
+  useEffect(() => {
+    setPage(1);
+  }, [category, companyId, direction, platform, search, sortKey]);
+
+  useEffect(() => {
+    if (page > pageCount) setPage(pageCount);
+  }, [page, pageCount]);
+
+  function handlePageSizeChange(nextPageSize: number) {
+    setPageSize(nextPageSize);
+    setPage(1);
+  }
 
   return (
     <>
@@ -107,30 +130,54 @@ export function EvidenceExplorer({ data }: EvidenceExplorerProps) {
           </select>
         </FilterBar>
 
-        <p className="mt-4 text-sm text-slate-400">{filteredSignals.length} matching evidence signals</p>
+        <div className="mt-4">
+          <PaginationControls
+            page={currentPage}
+            pageSize={pageSize}
+            totalItems={filteredSignals.length}
+            onPageChange={setPage}
+            onPageSizeChange={handlePageSizeChange}
+          />
+        </div>
       </section>
 
       {filteredSignals.length ? (
-        <div className="grid gap-4 xl:grid-cols-2">
-          {filteredSignals.map((signal) => (
-            <EvidenceCard
-              key={signal.signal_id}
-              companyName={companyById.get(signal.company_id)?.name ?? signal.company_id}
-              esgCategory={signal.esg_category}
-              signalTags={signal.signal_tags}
-              signalDirection={signal.signal_direction}
-              signalStrength={signal.signal_strength}
-              weightedSignalScore={signal.weighted_signal_score}
-              confidence={signal.confidence}
-              timeRelevance={signal.time_relevance}
-              evidenceSummary={signal.evidence_summary}
-              evidenceQuote={signal.evidence_quote}
-              publishedDate={signal.published_date}
-              sourcePlatform={signal.source_platform as SourcePlatform}
-              url={signal.url}
+        <>
+          <div className="grid gap-4 xl:grid-cols-2">
+            {pagedSignals.map((signal) => (
+              <EvidenceCard
+                key={signal.signal_id}
+                companyName={companyById.get(signal.company_id)?.name ?? signal.company_id}
+                esgCategory={signal.esg_category}
+                signalTags={signal.signal_tags}
+                signalDirection={signal.signal_direction}
+                signalStrength={signal.signal_strength}
+                weightedSignalScore={signal.weighted_signal_score}
+                confidence={signal.confidence}
+                timeRelevance={signal.time_relevance}
+                evidenceSummary={signal.evidence_summary}
+                evidenceQuote={signal.evidence_quote}
+                evidenceBasis={signal.evidence_basis}
+                publishedDate={signal.published_date}
+                sourcePlatform={signal.source_platform as SourcePlatform}
+                sourceStatus={signal.source_status}
+                sourceNote={signal.source_note}
+                sourceLinkType={signal.source_link_type}
+                url={signal.url}
+                clickableUrl={signal.clickable_url}
+              />
+            ))}
+          </div>
+          <div className="mt-5">
+            <PaginationControls
+              page={currentPage}
+              pageSize={pageSize}
+              totalItems={filteredSignals.length}
+              onPageChange={setPage}
+              onPageSizeChange={handlePageSizeChange}
             />
-          ))}
-        </div>
+          </div>
+        </>
       ) : (
         <EmptyState title="No matching evidence" message="Adjust the filters or search terms to show more ESG signals." />
       )}
