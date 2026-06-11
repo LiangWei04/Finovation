@@ -12,7 +12,12 @@
     "pipeline": "npm run collect && npm run extract && npm run dataset && npm run trends",
     "validate": "tsx scripts/validate_outputs.ts",
     "qa": "tsx scripts/qa_feedback_loop.ts",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:sync-data": "tsx scripts/sync_frontend_data.ts",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "frontend:preview": "npm --prefix frontend run preview"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
