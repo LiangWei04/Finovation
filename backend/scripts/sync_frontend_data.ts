@@ -7,6 +7,7 @@ const requiredFiles = [
   "trend_output.json",
   "companies.json",
   "collection_scope.json",
+  "financial_profiles.json",
 ];
 
 const rootDir = process.cwd();

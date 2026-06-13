@@ -1,14 +1,18 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
-export type Route =
+export type AppRoute =
   | { name: "dashboard" }
-  | { name: "evidence" }
-  | { name: "company"; companyId: string };
+  | { name: "company"; companyId: string }
+  | { name: "risk-radar" }
+  | { name: "investment" }
+  | { name: "watchlist" };
 
-function parsePath(pathname: string): Route {
-  const companyMatch = pathname.match(/^\/company\/([^/]+)/);
+export function parseRoute(pathname = window.location.pathname): AppRoute {
+  if (pathname === "/watchlist") return { name: "watchlist" };
+  if (pathname === "/investment") return { name: "investment" };
+  if (pathname === "/risk-radar") return { name: "risk-radar" };
+  const companyMatch = pathname.match(/^\/company\/([^/]+)$/);
   if (companyMatch) return { name: "company", companyId: decodeURIComponent(companyMatch[1]) };
-  if (pathname === "/evidence") return { name: "evidence" };
   return { name: "dashboard" };
 }
 
@@ -18,13 +22,13 @@ export function navigateTo(path: string) {
 }
 
 export function useRoute() {
-  const [path, setPath] = useState(window.location.pathname);
+  const [route, setRoute] = useState<AppRoute>(() => parseRoute());
 
   useEffect(() => {
-    const handlePopState = () => setPath(window.location.pathname);
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
+    const syncRoute = () => setRoute(parseRoute());
+    window.addEventListener("popstate", syncRoute);
+    return () => window.removeEventListener("popstate", syncRoute);
   }, []);
 
-  return useMemo(() => parsePath(path), [path]);
+  return route;
 }

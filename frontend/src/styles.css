@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  background: #0b0f14;
+  font-family: Roboto, Arial, ui-sans-serif, system-ui, sans-serif;
+  color: #0f0f0f;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -16,48 +22,66 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  color: #e5edf6;
-  background: linear-gradient(135deg, #0b0f14 0%, #10161f 54%, #111827 100%);
+  background: #f5f5f7;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
   color: inherit;
-}
-
-button,
-input,
-select {
-  font: inherit;
+  text-decoration: none;
 }
 
 @layer components {
-  .glass-panel {
-    @apply border border-white/10 bg-panel shadow-glow;
+  .rb-icon-button {
+    @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-broadcast-muted transition hover:bg-broadcast-surface hover:text-broadcast-text;
   }
 
-  .control {
-    @apply h-10 rounded-lg border border-white/10 bg-ink/95 px-3 text-sm text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-teal/70 focus:ring-2 focus:ring-teal/20;
+  .rb-sidebar-item {
+    @apply flex h-10 w-full items-center gap-6 rounded-lg px-3 text-sm font-normal text-broadcast-text transition hover:bg-broadcast-surface;
   }
 
-  .label {
-    @apply text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400;
+  .rb-sidebar-item-active {
+    @apply bg-broadcast-surface font-bold;
+  }
+
+  .rb-chip {
+    @apply whitespace-nowrap rounded-full bg-broadcast-surface px-3 py-2 text-sm font-medium leading-5 text-broadcast-text transition hover:bg-[#e5e5e5];
+  }
+
+  .rb-chip-active {
+    @apply bg-broadcast-text text-white hover:bg-broadcast-text;
+  }
+
+  .rb-page-title {
+    @apply text-2xl font-bold leading-8 text-broadcast-text;
+  }
+
+  .rb-section-title {
+    @apply text-xl font-medium leading-7 text-broadcast-text;
+  }
+
+  .rb-thumbnail {
+    @apply aspect-video overflow-hidden rounded-xl bg-broadcast-surface;
   }
 }
 
-select.control {
-  color: #f8fafc;
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
-select.control option {
-  background: #f8fafc;
-  color: #111827;
-}
-
-select.control option:checked {
-  background: #dcfce7;
-  color: #052e16;
-}
-
-.radar-chart-frame .recharts-surface {
-  overflow: visible;
+.ticker-track {
+  animation: ticker-scroll 42s linear infinite;
 }

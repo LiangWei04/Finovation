@@ -1,0 +1,4602 @@
+[
+  {
+    "company_id": "C001",
+    "currency": "SGD",
+    "market_cap_m": 96000,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 36.67,
+        "volume_m": 6.5
+      },
+      {
+        "date": "2023-02-28",
+        "close": 37.48,
+        "volume_m": 6.9
+      },
+      {
+        "date": "2023-03-31",
+        "close": 38.37,
+        "volume_m": 7.1
+      },
+      {
+        "date": "2023-04-30",
+        "close": 39.28,
+        "volume_m": 7.1
+      },
+      {
+        "date": "2023-05-31",
+        "close": 39.86,
+        "volume_m": 7.1
+      },
+      {
+        "date": "2023-06-30",
+        "close": 40.66,
+        "volume_m": 6.9
+      },
+      {
+        "date": "2023-07-31",
+        "close": 41.34,
+        "volume_m": 6.6
+      },
+      {
+        "date": "2023-08-31",
+        "close": 42.12,
+        "volume_m": 6.3
+      },
+      {
+        "date": "2023-09-30",
+        "close": 42.47,
+        "volume_m": 6.4
+      },
+      {
+        "date": "2023-10-31",
+        "close": 42.65,
+        "volume_m": 6.8
+      },
+      {
+        "date": "2023-11-30",
+        "close": 42.69,
+        "volume_m": 7.2
+      },
+      {
+        "date": "2023-12-31",
+        "close": 42.65,
+        "volume_m": 7.5
+      },
+      {
+        "date": "2024-01-31",
+        "close": 42.56,
+        "volume_m": 7.6
+      },
+      {
+        "date": "2024-02-29",
+        "close": 42.25,
+        "volume_m": 7.6
+      },
+      {
+        "date": "2024-03-31",
+        "close": 42.23,
+        "volume_m": 7.5
+      },
+      {
+        "date": "2024-04-30",
+        "close": 42.29,
+        "volume_m": 7.2
+      },
+      {
+        "date": "2024-05-31",
+        "close": 42.45,
+        "volume_m": 6.9
+      },
+      {
+        "date": "2024-06-30",
+        "close": 42.7,
+        "volume_m": 6.7
+      },
+      {
+        "date": "2024-07-31",
+        "close": 43.19,
+        "volume_m": 7.1
+      },
+      {
+        "date": "2024-08-31",
+        "close": 43.59,
+        "volume_m": 7.5
+      },
+      {
+        "date": "2024-09-30",
+        "close": 44.01,
+        "volume_m": 7.8
+      },
+      {
+        "date": "2024-10-31",
+        "close": 44.44,
+        "volume_m": 8
+      },
+      {
+        "date": "2024-11-30",
+        "close": 44.71,
+        "volume_m": 8.1
+      },
+      {
+        "date": "2024-12-31",
+        "close": 45.07,
+        "volume_m": 8
+      },
+      {
+        "date": "2025-01-31",
+        "close": 45.37,
+        "volume_m": 7.8
+      },
+      {
+        "date": "2025-02-28",
+        "close": 45.6,
+        "volume_m": 7.5
+      },
+      {
+        "date": "2025-03-31",
+        "close": 45.75,
+        "volume_m": 7.2
+      },
+      {
+        "date": "2025-04-30",
+        "close": 45.84,
+        "volume_m": 7.4
+      },
+      {
+        "date": "2025-05-31",
+        "close": 45.9,
+        "volume_m": 7.8
+      },
+      {
+        "date": "2025-06-30",
+        "close": 45.98,
+        "volume_m": 8.2
+      },
+      {
+        "date": "2025-07-31",
+        "close": 45.99,
+        "volume_m": 8.4
+      },
+      {
+        "date": "2025-08-31",
+        "close": 45.94,
+        "volume_m": 8.5
+      },
+      {
+        "date": "2025-09-30",
+        "close": 45.96,
+        "volume_m": 8.5
+      },
+      {
+        "date": "2025-10-31",
+        "close": 45.98,
+        "volume_m": 8.4
+      },
+      {
+        "date": "2025-11-30",
+        "close": 46,
+        "volume_m": 8.1
+      },
+      {
+        "date": "2025-12-31",
+        "close": 46,
+        "volume_m": 7
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 14600,
+        "net_income_m": 6800,
+        "operating_margin": 0.43,
+        "eps": 2.55,
+        "free_cash_flow_m": 6200,
+        "debt_to_equity": 0.74
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 16600,
+        "net_income_m": 8200,
+        "operating_margin": 0.47,
+        "eps": 3.08,
+        "free_cash_flow_m": 7600,
+        "debt_to_equity": 0.72
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 18800,
+        "net_income_m": 10100,
+        "operating_margin": 0.51,
+        "eps": 3.78,
+        "free_cash_flow_m": 9000,
+        "debt_to_equity": 0.68
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 20400,
+        "net_income_m": 10800,
+        "operating_margin": 0.52,
+        "eps": 4.05,
+        "free_cash_flow_m": 9600,
+        "debt_to_equity": 0.66
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 21500,
+        "net_income_m": 11400,
+        "operating_margin": 0.53,
+        "eps": 4.28,
+        "free_cash_flow_m": 10100,
+        "debt_to_equity": 0.64
+      }
+    ],
+    "valuation": {
+      "pe": 10.8,
+      "pb": 1.62,
+      "ev_ebitda": 8.4,
+      "dividend_yield": 0.052
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 101.76,
+        "benchmark_index": 101.06
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 103.73,
+        "benchmark_index": 102.17
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 105.8,
+        "benchmark_index": 103.28
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 107.44,
+        "benchmark_index": 104.1
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 109.48,
+        "benchmark_index": 105.05
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 111.39,
+        "benchmark_index": 105.87
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 113.49,
+        "benchmark_index": 106.71
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 114.94,
+        "benchmark_index": 107.2
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 116.14,
+        "benchmark_index": 107.51
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 117.09,
+        "benchmark_index": 107.67
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 117.87,
+        "benchmark_index": 107.72
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 118.51,
+        "benchmark_index": 107.68
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 118.73,
+        "benchmark_index": 107.44
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 119.33,
+        "benchmark_index": 107.37
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 119.98,
+        "benchmark_index": 107.31
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 120.69,
+        "benchmark_index": 107.3
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 121.46,
+        "benchmark_index": 107.33
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 122.54,
+        "benchmark_index": 107.52
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 123.39,
+        "benchmark_index": 107.64
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 124.2,
+        "benchmark_index": 107.77
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 124.97,
+        "benchmark_index": 107.92
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 125.43,
+        "benchmark_index": 107.99
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 126.02,
+        "benchmark_index": 108.15
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 126.51,
+        "benchmark_index": 108.3
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 126.9,
+        "benchmark_index": 108.44
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 127.2,
+        "benchmark_index": 108.59
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 127.46,
+        "benchmark_index": 108.74
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 127.75,
+        "benchmark_index": 108.93
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 128.15,
+        "benchmark_index": 109.18
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 128.54,
+        "benchmark_index": 109.45
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 128.93,
+        "benchmark_index": 109.72
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 129.54,
+        "benchmark_index": 110.09
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 130.25,
+        "benchmark_index": 110.5
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 131.06,
+        "benchmark_index": 110.95
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 131.93,
+        "benchmark_index": 111.42
+      }
+    ]
+  },
+  {
+    "company_id": "C002",
+    "currency": "SGD",
+    "market_cap_m": 11800,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 6.01,
+        "volume_m": 4.7
+      },
+      {
+        "date": "2023-02-28",
+        "close": 6.17,
+        "volume_m": 5
+      },
+      {
+        "date": "2023-03-31",
+        "close": 6.32,
+        "volume_m": 5.1
+      },
+      {
+        "date": "2023-04-30",
+        "close": 6.48,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2023-05-31",
+        "close": 6.56,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2023-06-30",
+        "close": 6.67,
+        "volume_m": 5
+      },
+      {
+        "date": "2023-07-31",
+        "close": 6.76,
+        "volume_m": 4.8
+      },
+      {
+        "date": "2023-08-31",
+        "close": 6.86,
+        "volume_m": 4.6
+      },
+      {
+        "date": "2023-09-30",
+        "close": 6.88,
+        "volume_m": 4.6
+      },
+      {
+        "date": "2023-10-31",
+        "close": 6.87,
+        "volume_m": 5
+      },
+      {
+        "date": "2023-11-30",
+        "close": 6.84,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2023-12-31",
+        "close": 6.81,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2024-01-31",
+        "close": 6.78,
+        "volume_m": 5.5
+      },
+      {
+        "date": "2024-02-29",
+        "close": 6.71,
+        "volume_m": 5.5
+      },
+      {
+        "date": "2024-03-31",
+        "close": 6.71,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2024-04-30",
+        "close": 6.73,
+        "volume_m": 5.3
+      },
+      {
+        "date": "2024-05-31",
+        "close": 6.77,
+        "volume_m": 5
+      },
+      {
+        "date": "2024-06-30",
+        "close": 6.82,
+        "volume_m": 4.8
+      },
+      {
+        "date": "2024-07-31",
+        "close": 6.92,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2024-08-31",
+        "close": 7,
+        "volume_m": 5.5
+      },
+      {
+        "date": "2024-09-30",
+        "close": 7.07,
+        "volume_m": 5.7
+      },
+      {
+        "date": "2024-10-31",
+        "close": 7.15,
+        "volume_m": 5.8
+      },
+      {
+        "date": "2024-11-30",
+        "close": 7.19,
+        "volume_m": 5.9
+      },
+      {
+        "date": "2024-12-31",
+        "close": 7.24,
+        "volume_m": 5.8
+      },
+      {
+        "date": "2025-01-31",
+        "close": 7.28,
+        "volume_m": 5.7
+      },
+      {
+        "date": "2025-02-28",
+        "close": 7.31,
+        "volume_m": 5.5
+      },
+      {
+        "date": "2025-03-31",
+        "close": 7.33,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2025-04-30",
+        "close": 7.33,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2025-05-31",
+        "close": 7.34,
+        "volume_m": 5.7
+      },
+      {
+        "date": "2025-06-30",
+        "close": 7.35,
+        "volume_m": 6
+      },
+      {
+        "date": "2025-07-31",
+        "close": 7.35,
+        "volume_m": 6.1
+      },
+      {
+        "date": "2025-08-31",
+        "close": 7.34,
+        "volume_m": 6.2
+      },
+      {
+        "date": "2025-09-30",
+        "close": 7.35,
+        "volume_m": 6.2
+      },
+      {
+        "date": "2025-10-31",
+        "close": 7.35,
+        "volume_m": 6.1
+      },
+      {
+        "date": "2025-11-30",
+        "close": 7.36,
+        "volume_m": 5.9
+      },
+      {
+        "date": "2025-12-31",
+        "close": 7.36,
+        "volume_m": 5.1
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 6500,
+        "net_income_m": 980,
+        "operating_margin": 0.18,
+        "eps": 0.51,
+        "free_cash_flow_m": 680,
+        "debt_to_equity": 0.92
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 7100,
+        "net_income_m": 1120,
+        "operating_margin": 0.19,
+        "eps": 0.58,
+        "free_cash_flow_m": 790,
+        "debt_to_equity": 0.88
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 7600,
+        "net_income_m": 1260,
+        "operating_margin": 0.21,
+        "eps": 0.64,
+        "free_cash_flow_m": 840,
+        "debt_to_equity": 0.82
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 8150,
+        "net_income_m": 1340,
+        "operating_margin": 0.22,
+        "eps": 0.69,
+        "free_cash_flow_m": 920,
+        "debt_to_equity": 0.78
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 8600,
+        "net_income_m": 1450,
+        "operating_margin": 0.23,
+        "eps": 0.74,
+        "free_cash_flow_m": 1010,
+        "debt_to_equity": 0.74
+      }
+    ],
+    "valuation": {
+      "pe": 11.9,
+      "pb": 1.18,
+      "ev_ebitda": 9.2,
+      "dividend_yield": 0.045
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 102.04,
+        "benchmark_index": 101.15
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 104.06,
+        "benchmark_index": 102.23
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 106.24,
+        "benchmark_index": 103.31
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 107.72,
+        "benchmark_index": 104
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 109.53,
+        "benchmark_index": 104.78
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 111.19,
+        "benchmark_index": 105.43
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 112.97,
+        "benchmark_index": 106.07
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 113.98,
+        "benchmark_index": 106.3
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 114.69,
+        "benchmark_index": 106.36
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 115.16,
+        "benchmark_index": 106.27
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 115.57,
+        "benchmark_index": 106.14
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 115.91,
+        "benchmark_index": 105.95
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 115.76,
+        "benchmark_index": 105.56
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 116.22,
+        "benchmark_index": 105.43
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 116.79,
+        "benchmark_index": 105.36
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 117.47,
+        "benchmark_index": 105.36
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 118.16,
+        "benchmark_index": 105.39
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 119.28,
+        "benchmark_index": 105.64
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 120.13,
+        "benchmark_index": 105.79
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 120.81,
+        "benchmark_index": 105.92
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 121.56,
+        "benchmark_index": 106.11
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 121.88,
+        "benchmark_index": 106.16
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 122.3,
+        "benchmark_index": 106.28
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 122.64,
+        "benchmark_index": 106.41
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 122.92,
+        "benchmark_index": 106.54
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 123.15,
+        "benchmark_index": 106.68
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 123.26,
+        "benchmark_index": 106.8
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 123.55,
+        "benchmark_index": 107
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 123.92,
+        "benchmark_index": 107.26
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 124.3,
+        "benchmark_index": 107.53
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 124.69,
+        "benchmark_index": 107.81
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 125.37,
+        "benchmark_index": 108.21
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 126.04,
+        "benchmark_index": 108.6
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 126.9,
+        "benchmark_index": 109.07
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 127.73,
+        "benchmark_index": 109.52
+      }
+    ]
+  },
+  {
+    "company_id": "C003",
+    "currency": "SGD",
+    "market_cap_m": 15100,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 2.59,
+        "volume_m": 7.6
+      },
+      {
+        "date": "2023-02-28",
+        "close": 2.656,
+        "volume_m": 8
+      },
+      {
+        "date": "2023-03-31",
+        "close": 2.72,
+        "volume_m": 8.3
+      },
+      {
+        "date": "2023-04-30",
+        "close": 2.778,
+        "volume_m": 8.4
+      },
+      {
+        "date": "2023-05-31",
+        "close": 2.795,
+        "volume_m": 8.3
+      },
+      {
+        "date": "2023-06-30",
+        "close": 2.827,
+        "volume_m": 8.1
+      },
+      {
+        "date": "2023-07-31",
+        "close": 2.844,
+        "volume_m": 7.8
+      },
+      {
+        "date": "2023-08-31",
+        "close": 2.869,
+        "volume_m": 7.3
+      },
+      {
+        "date": "2023-09-30",
+        "close": 2.858,
+        "volume_m": 7.5
+      },
+      {
+        "date": "2023-10-31",
+        "close": 2.838,
+        "volume_m": 8
+      },
+      {
+        "date": "2023-11-30",
+        "close": 2.815,
+        "volume_m": 8.4
+      },
+      {
+        "date": "2023-12-31",
+        "close": 2.794,
+        "volume_m": 8.7
+      },
+      {
+        "date": "2024-01-31",
+        "close": 2.778,
+        "volume_m": 8.9
+      },
+      {
+        "date": "2024-02-29",
+        "close": 2.751,
+        "volume_m": 8.9
+      },
+      {
+        "date": "2024-03-31",
+        "close": 2.755,
+        "volume_m": 8.7
+      },
+      {
+        "date": "2024-04-30",
+        "close": 2.768,
+        "volume_m": 8.5
+      },
+      {
+        "date": "2024-05-31",
+        "close": 2.789,
+        "volume_m": 8.1
+      },
+      {
+        "date": "2024-06-30",
+        "close": 2.817,
+        "volume_m": 7.8
+      },
+      {
+        "date": "2024-07-31",
+        "close": 2.863,
+        "volume_m": 8.3
+      },
+      {
+        "date": "2024-08-31",
+        "close": 2.896,
+        "volume_m": 8.8
+      },
+      {
+        "date": "2024-09-30",
+        "close": 2.928,
+        "volume_m": 9.2
+      },
+      {
+        "date": "2024-10-31",
+        "close": 2.956,
+        "volume_m": 9.4
+      },
+      {
+        "date": "2024-11-30",
+        "close": 2.966,
+        "volume_m": 9.5
+      },
+      {
+        "date": "2024-12-31",
+        "close": 2.983,
+        "volume_m": 9.4
+      },
+      {
+        "date": "2025-01-31",
+        "close": 2.995,
+        "volume_m": 9.1
+      },
+      {
+        "date": "2025-02-28",
+        "close": 3.001,
+        "volume_m": 8.8
+      },
+      {
+        "date": "2025-03-31",
+        "close": 3.003,
+        "volume_m": 8.4
+      },
+      {
+        "date": "2025-04-30",
+        "close": 3.003,
+        "volume_m": 8.7
+      },
+      {
+        "date": "2025-05-31",
+        "close": 3.003,
+        "volume_m": 9.2
+      },
+      {
+        "date": "2025-06-30",
+        "close": 3.009,
+        "volume_m": 9.6
+      },
+      {
+        "date": "2025-07-31",
+        "close": 3.01,
+        "volume_m": 9.9
+      },
+      {
+        "date": "2025-08-31",
+        "close": 3.008,
+        "volume_m": 10
+      },
+      {
+        "date": "2025-09-30",
+        "close": 3.012,
+        "volume_m": 10
+      },
+      {
+        "date": "2025-10-31",
+        "close": 3.015,
+        "volume_m": 9.8
+      },
+      {
+        "date": "2025-11-30",
+        "close": 3.018,
+        "volume_m": 9.5
+      },
+      {
+        "date": "2025-12-31",
+        "close": 3.02,
+        "volume_m": 8.2
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 2650,
+        "net_income_m": 930,
+        "operating_margin": 0.31,
+        "eps": 0.17,
+        "free_cash_flow_m": 720,
+        "debt_to_equity": 0.86
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 2820,
+        "net_income_m": 980,
+        "operating_margin": 0.32,
+        "eps": 0.18,
+        "free_cash_flow_m": 760,
+        "debt_to_equity": 0.83
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 2980,
+        "net_income_m": 1030,
+        "operating_margin": 0.33,
+        "eps": 0.19,
+        "free_cash_flow_m": 810,
+        "debt_to_equity": 0.79
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 3120,
+        "net_income_m": 1080,
+        "operating_margin": 0.34,
+        "eps": 0.2,
+        "free_cash_flow_m": 850,
+        "debt_to_equity": 0.77
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 3290,
+        "net_income_m": 1160,
+        "operating_margin": 0.35,
+        "eps": 0.22,
+        "free_cash_flow_m": 910,
+        "debt_to_equity": 0.74
+      }
+    ],
+    "valuation": {
+      "pe": 14.4,
+      "pb": 0.92,
+      "ev_ebitda": 11,
+      "dividend_yield": 0.038
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 101.98,
+        "benchmark_index": 101.08
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 103.99,
+        "benchmark_index": 102.1
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 105.91,
+        "benchmark_index": 103.02
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 106.98,
+        "benchmark_index": 103.46
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 108.41,
+        "benchmark_index": 104.02
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 109.53,
+        "benchmark_index": 104.37
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 110.82,
+        "benchmark_index": 104.76
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 111.29,
+        "benchmark_index": 104.72
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 111.51,
+        "benchmark_index": 104.54
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 111.6,
+        "benchmark_index": 104.27
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 111.66,
+        "benchmark_index": 103.98
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 111.75,
+        "benchmark_index": 103.71
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 111.49,
+        "benchmark_index": 103.28
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 111.87,
+        "benchmark_index": 103.15
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 112.38,
+        "benchmark_index": 103.09
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 112.99,
+        "benchmark_index": 103.11
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 113.69,
+        "benchmark_index": 103.19
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 114.74,
+        "benchmark_index": 103.46
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 115.43,
+        "benchmark_index": 103.61
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 116.05,
+        "benchmark_index": 103.76
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 116.56,
+        "benchmark_index": 103.91
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 116.65,
+        "benchmark_index": 103.9
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 116.91,
+        "benchmark_index": 104.01
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 117.1,
+        "benchmark_index": 104.12
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 117.2,
+        "benchmark_index": 104.22
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 117.28,
+        "benchmark_index": 104.33
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 117.39,
+        "benchmark_index": 104.47
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 117.59,
+        "benchmark_index": 104.66
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 118.02,
+        "benchmark_index": 104.96
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 118.42,
+        "benchmark_index": 105.26
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 118.86,
+        "benchmark_index": 105.57
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 119.52,
+        "benchmark_index": 105.97
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 120.23,
+        "benchmark_index": 106.39
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 121.02,
+        "benchmark_index": 106.84
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 121.84,
+        "benchmark_index": 107.28
+      }
+    ]
+  },
+  {
+    "company_id": "C004",
+    "currency": "SGD",
+    "market_cap_m": 20300,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 5.97,
+        "volume_m": 11.9
+      },
+      {
+        "date": "2023-02-28",
+        "close": 6.12,
+        "volume_m": 12.5
+      },
+      {
+        "date": "2023-03-31",
+        "close": 6.26,
+        "volume_m": 12.9
+      },
+      {
+        "date": "2023-04-30",
+        "close": 6.36,
+        "volume_m": 13.1
+      },
+      {
+        "date": "2023-05-31",
+        "close": 6.32,
+        "volume_m": 13
+      },
+      {
+        "date": "2023-06-30",
+        "close": 6.33,
+        "volume_m": 12.6
+      },
+      {
+        "date": "2023-07-31",
+        "close": 6.29,
+        "volume_m": 12.1
+      },
+      {
+        "date": "2023-08-31",
+        "close": 6.29,
+        "volume_m": 11.5
+      },
+      {
+        "date": "2023-09-30",
+        "close": 6.19,
+        "volume_m": 11.7
+      },
+      {
+        "date": "2023-10-31",
+        "close": 6.08,
+        "volume_m": 12.5
+      },
+      {
+        "date": "2023-11-30",
+        "close": 5.97,
+        "volume_m": 13.2
+      },
+      {
+        "date": "2023-12-31",
+        "close": 5.89,
+        "volume_m": 13.6
+      },
+      {
+        "date": "2024-01-31",
+        "close": 5.83,
+        "volume_m": 13.9
+      },
+      {
+        "date": "2024-02-29",
+        "close": 5.75,
+        "volume_m": 13.9
+      },
+      {
+        "date": "2024-03-31",
+        "close": 5.77,
+        "volume_m": 13.6
+      },
+      {
+        "date": "2024-04-30",
+        "close": 5.8,
+        "volume_m": 13.2
+      },
+      {
+        "date": "2024-05-31",
+        "close": 5.87,
+        "volume_m": 12.6
+      },
+      {
+        "date": "2024-06-30",
+        "close": 5.94,
+        "volume_m": 12.2
+      },
+      {
+        "date": "2024-07-31",
+        "close": 6.06,
+        "volume_m": 13
+      },
+      {
+        "date": "2024-08-31",
+        "close": 6.14,
+        "volume_m": 13.7
+      },
+      {
+        "date": "2024-09-30",
+        "close": 6.21,
+        "volume_m": 14.3
+      },
+      {
+        "date": "2024-10-31",
+        "close": 6.26,
+        "volume_m": 14.7
+      },
+      {
+        "date": "2024-11-30",
+        "close": 6.26,
+        "volume_m": 14.8
+      },
+      {
+        "date": "2024-12-31",
+        "close": 6.28,
+        "volume_m": 14.6
+      },
+      {
+        "date": "2025-01-31",
+        "close": 6.28,
+        "volume_m": 14.3
+      },
+      {
+        "date": "2025-02-28",
+        "close": 6.28,
+        "volume_m": 13.7
+      },
+      {
+        "date": "2025-03-31",
+        "close": 6.27,
+        "volume_m": 13.1
+      },
+      {
+        "date": "2025-04-30",
+        "close": 6.26,
+        "volume_m": 13.5
+      },
+      {
+        "date": "2025-05-31",
+        "close": 6.26,
+        "volume_m": 14.3
+      },
+      {
+        "date": "2025-06-30",
+        "close": 6.27,
+        "volume_m": 15
+      },
+      {
+        "date": "2025-07-31",
+        "close": 6.27,
+        "volume_m": 15.4
+      },
+      {
+        "date": "2025-08-31",
+        "close": 6.27,
+        "volume_m": 15.6
+      },
+      {
+        "date": "2025-09-30",
+        "close": 6.28,
+        "volume_m": 15.6
+      },
+      {
+        "date": "2025-10-31",
+        "close": 6.29,
+        "volume_m": 15.3
+      },
+      {
+        "date": "2025-11-30",
+        "close": 6.3,
+        "volume_m": 14.8
+      },
+      {
+        "date": "2025-12-31",
+        "close": 6.31,
+        "volume_m": 12.8
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 7600,
+        "net_income_m": -962,
+        "operating_margin": -0.08,
+        "eps": -0.32,
+        "free_cash_flow_m": -410,
+        "debt_to_equity": 1.45
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 13200,
+        "net_income_m": 880,
+        "operating_margin": 0.11,
+        "eps": 0.29,
+        "free_cash_flow_m": 520,
+        "debt_to_equity": 1.28
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 17600,
+        "net_income_m": 2140,
+        "operating_margin": 0.17,
+        "eps": 0.72,
+        "free_cash_flow_m": 1310,
+        "debt_to_equity": 1.08
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 19200,
+        "net_income_m": 2460,
+        "operating_margin": 0.18,
+        "eps": 0.83,
+        "free_cash_flow_m": 1550,
+        "debt_to_equity": 0.96
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 20100,
+        "net_income_m": 2380,
+        "operating_margin": 0.17,
+        "eps": 0.8,
+        "free_cash_flow_m": 1460,
+        "debt_to_equity": 0.92
+      }
+    ],
+    "valuation": {
+      "pe": 17.1,
+      "pb": 1.15,
+      "ev_ebitda": 8.9,
+      "dividend_yield": 0.031
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 101.86,
+        "benchmark_index": 101.02
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 103.68,
+        "benchmark_index": 101.95
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 105.15,
+        "benchmark_index": 102.65
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 105.31,
+        "benchmark_index": 102.68
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 105.95,
+        "benchmark_index": 102.88
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 106.11,
+        "benchmark_index": 102.8
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 106.62,
+        "benchmark_index": 102.85
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 106.11,
+        "benchmark_index": 102.4
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 105.43,
+        "benchmark_index": 101.84
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 104.67,
+        "benchmark_index": 101.23
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 104.12,
+        "benchmark_index": 100.73
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 103.69,
+        "benchmark_index": 100.28
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 102.96,
+        "benchmark_index": 99.7
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 103.19,
+        "benchmark_index": 99.6
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 103.44,
+        "benchmark_index": 99.52
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 104.04,
+        "benchmark_index": 99.64
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 104.56,
+        "benchmark_index": 99.76
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 105.55,
+        "benchmark_index": 100.13
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 106.08,
+        "benchmark_index": 100.32
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 106.49,
+        "benchmark_index": 100.48
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 106.69,
+        "benchmark_index": 100.59
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 106.41,
+        "benchmark_index": 100.52
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 106.36,
+        "benchmark_index": 100.58
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 106.16,
+        "benchmark_index": 100.59
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 106.02,
+        "benchmark_index": 100.66
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 105.85,
+        "benchmark_index": 100.73
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 105.76,
+        "benchmark_index": 100.85
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 105.85,
+        "benchmark_index": 101.07
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 106.13,
+        "benchmark_index": 101.37
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 106.39,
+        "benchmark_index": 101.67
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 106.72,
+        "benchmark_index": 102
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 107.23,
+        "benchmark_index": 102.4
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 107.8,
+        "benchmark_index": 102.82
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 108.42,
+        "benchmark_index": 103.26
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 109.07,
+        "benchmark_index": 103.69
+      }
+    ]
+  },
+  {
+    "company_id": "C005",
+    "currency": "SGD",
+    "market_cap_m": 9600,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 5.02,
+        "volume_m": 9.7
+      },
+      {
+        "date": "2023-02-28",
+        "close": 5.17,
+        "volume_m": 10.2
+      },
+      {
+        "date": "2023-03-31",
+        "close": 5.3,
+        "volume_m": 10.5
+      },
+      {
+        "date": "2023-04-30",
+        "close": 5.39,
+        "volume_m": 10.6
+      },
+      {
+        "date": "2023-05-31",
+        "close": 5.39,
+        "volume_m": 10.5
+      },
+      {
+        "date": "2023-06-30",
+        "close": 5.43,
+        "volume_m": 10.3
+      },
+      {
+        "date": "2023-07-31",
+        "close": 5.43,
+        "volume_m": 9.8
+      },
+      {
+        "date": "2023-08-31",
+        "close": 5.46,
+        "volume_m": 9.3
+      },
+      {
+        "date": "2023-09-30",
+        "close": 5.44,
+        "volume_m": 9.5
+      },
+      {
+        "date": "2023-10-31",
+        "close": 5.41,
+        "volume_m": 10.1
+      },
+      {
+        "date": "2023-11-30",
+        "close": 5.4,
+        "volume_m": 10.7
+      },
+      {
+        "date": "2023-12-31",
+        "close": 5.41,
+        "volume_m": 11.1
+      },
+      {
+        "date": "2024-01-31",
+        "close": 5.43,
+        "volume_m": 11.3
+      },
+      {
+        "date": "2024-02-29",
+        "close": 5.44,
+        "volume_m": 11.3
+      },
+      {
+        "date": "2024-03-31",
+        "close": 5.51,
+        "volume_m": 11.1
+      },
+      {
+        "date": "2024-04-30",
+        "close": 5.59,
+        "volume_m": 10.7
+      },
+      {
+        "date": "2024-05-31",
+        "close": 5.68,
+        "volume_m": 10.2
+      },
+      {
+        "date": "2024-06-30",
+        "close": 5.78,
+        "volume_m": 9.9
+      },
+      {
+        "date": "2024-07-31",
+        "close": 5.9,
+        "volume_m": 10.6
+      },
+      {
+        "date": "2024-08-31",
+        "close": 5.99,
+        "volume_m": 11.2
+      },
+      {
+        "date": "2024-09-30",
+        "close": 6.06,
+        "volume_m": 11.6
+      },
+      {
+        "date": "2024-10-31",
+        "close": 6.12,
+        "volume_m": 11.9
+      },
+      {
+        "date": "2024-11-30",
+        "close": 6.13,
+        "volume_m": 12
+      },
+      {
+        "date": "2024-12-31",
+        "close": 6.16,
+        "volume_m": 11.9
+      },
+      {
+        "date": "2025-01-31",
+        "close": 6.18,
+        "volume_m": 11.6
+      },
+      {
+        "date": "2025-02-28",
+        "close": 6.2,
+        "volume_m": 11.2
+      },
+      {
+        "date": "2025-03-31",
+        "close": 6.21,
+        "volume_m": 10.6
+      },
+      {
+        "date": "2025-04-30",
+        "close": 6.23,
+        "volume_m": 11
+      },
+      {
+        "date": "2025-05-31",
+        "close": 6.24,
+        "volume_m": 11.6
+      },
+      {
+        "date": "2025-06-30",
+        "close": 6.27,
+        "volume_m": 12.2
+      },
+      {
+        "date": "2025-07-31",
+        "close": 6.29,
+        "volume_m": 12.5
+      },
+      {
+        "date": "2025-08-31",
+        "close": 6.3,
+        "volume_m": 12.7
+      },
+      {
+        "date": "2025-09-30",
+        "close": 6.32,
+        "volume_m": 12.7
+      },
+      {
+        "date": "2025-10-31",
+        "close": 6.34,
+        "volume_m": 12.4
+      },
+      {
+        "date": "2025-11-30",
+        "close": 6.35,
+        "volume_m": 12.1
+      },
+      {
+        "date": "2025-12-31",
+        "close": 6.36,
+        "volume_m": 10.4
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 7800,
+        "net_income_m": 280,
+        "operating_margin": 0.08,
+        "eps": 0.16,
+        "free_cash_flow_m": 240,
+        "debt_to_equity": 1.18
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 8400,
+        "net_income_m": 610,
+        "operating_margin": 0.12,
+        "eps": 0.34,
+        "free_cash_flow_m": 510,
+        "debt_to_equity": 1.05
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 9100,
+        "net_income_m": 880,
+        "operating_margin": 0.15,
+        "eps": 0.49,
+        "free_cash_flow_m": 790,
+        "debt_to_equity": 0.92
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 9800,
+        "net_income_m": 1040,
+        "operating_margin": 0.17,
+        "eps": 0.58,
+        "free_cash_flow_m": 940,
+        "debt_to_equity": 0.84
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 10600,
+        "net_income_m": 1180,
+        "operating_margin": 0.18,
+        "eps": 0.66,
+        "free_cash_flow_m": 1060,
+        "debt_to_equity": 0.78
+      }
+    ],
+    "valuation": {
+      "pe": 9.6,
+      "pb": 1.31,
+      "ev_ebitda": 7.6,
+      "dividend_yield": 0.041
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 102.53,
+        "benchmark_index": 101.18
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 104.88,
+        "benchmark_index": 102.2
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 106.81,
+        "benchmark_index": 102.95
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 107.73,
+        "benchmark_index": 103.16
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 109.1,
+        "benchmark_index": 103.54
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 110,
+        "benchmark_index": 103.66
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 111.22,
+        "benchmark_index": 103.88
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 111.79,
+        "benchmark_index": 103.79
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 112.18,
+        "benchmark_index": 103.6
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 112.73,
+        "benchmark_index": 103.48
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 113.43,
+        "benchmark_index": 103.43
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 114.17,
+        "benchmark_index": 103.41
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 114.7,
+        "benchmark_index": 103.31
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 115.88,
+        "benchmark_index": 103.52
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 117.11,
+        "benchmark_index": 103.77
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 118.38,
+        "benchmark_index": 104.08
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 119.72,
+        "benchmark_index": 104.45
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 121.26,
+        "benchmark_index": 104.93
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 122.41,
+        "benchmark_index": 105.28
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 123.31,
+        "benchmark_index": 105.57
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 124.12,
+        "benchmark_index": 105.84
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 124.37,
+        "benchmark_index": 105.92
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 124.91,
+        "benchmark_index": 106.15
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 125.4,
+        "benchmark_index": 106.38
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 125.98,
+        "benchmark_index": 106.66
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 126.54,
+        "benchmark_index": 106.95
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 127.31,
+        "benchmark_index": 107.34
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 128.08,
+        "benchmark_index": 107.72
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 129.18,
+        "benchmark_index": 108.25
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 130.27,
+        "benchmark_index": 108.76
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 131.33,
+        "benchmark_index": 109.26
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 132.6,
+        "benchmark_index": 109.82
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 133.93,
+        "benchmark_index": 110.4
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 135.18,
+        "benchmark_index": 110.93
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 136.47,
+        "benchmark_index": 111.46
+      }
+    ]
+  },
+  {
+    "company_id": "C006",
+    "currency": "USD",
+    "market_cap_m": 16400,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 3.176,
+        "volume_m": 7.5
+      },
+      {
+        "date": "2023-02-28",
+        "close": 3.208,
+        "volume_m": 7.8
+      },
+      {
+        "date": "2023-03-31",
+        "close": 3.218,
+        "volume_m": 8.1
+      },
+      {
+        "date": "2023-04-30",
+        "close": 3.202,
+        "volume_m": 8.2
+      },
+      {
+        "date": "2023-05-31",
+        "close": 3.121,
+        "volume_m": 8.1
+      },
+      {
+        "date": "2023-06-30",
+        "close": 3.066,
+        "volume_m": 7.9
+      },
+      {
+        "date": "2023-07-31",
+        "close": 3.001,
+        "volume_m": 7.6
+      },
+      {
+        "date": "2023-08-31",
+        "close": 2.965,
+        "volume_m": 7.2
+      },
+      {
+        "date": "2023-09-30",
+        "close": 2.899,
+        "volume_m": 7.3
+      },
+      {
+        "date": "2023-10-31",
+        "close": 2.843,
+        "volume_m": 7.8
+      },
+      {
+        "date": "2023-11-30",
+        "close": 2.803,
+        "volume_m": 8.2
+      },
+      {
+        "date": "2023-12-31",
+        "close": 2.779,
+        "volume_m": 8.5
+      },
+      {
+        "date": "2024-01-31",
+        "close": 2.772,
+        "volume_m": 8.7
+      },
+      {
+        "date": "2024-02-29",
+        "close": 2.754,
+        "volume_m": 8.7
+      },
+      {
+        "date": "2024-03-31",
+        "close": 2.775,
+        "volume_m": 8.5
+      },
+      {
+        "date": "2024-04-30",
+        "close": 2.803,
+        "volume_m": 8.2
+      },
+      {
+        "date": "2024-05-31",
+        "close": 2.836,
+        "volume_m": 7.9
+      },
+      {
+        "date": "2024-06-30",
+        "close": 2.868,
+        "volume_m": 7.6
+      },
+      {
+        "date": "2024-07-31",
+        "close": 2.914,
+        "volume_m": 8.1
+      },
+      {
+        "date": "2024-08-31",
+        "close": 2.935,
+        "volume_m": 8.6
+      },
+      {
+        "date": "2024-09-30",
+        "close": 2.947,
+        "volume_m": 9
+      },
+      {
+        "date": "2024-10-31",
+        "close": 2.951,
+        "volume_m": 9.2
+      },
+      {
+        "date": "2024-11-30",
+        "close": 2.931,
+        "volume_m": 9.2
+      },
+      {
+        "date": "2024-12-31",
+        "close": 2.924,
+        "volume_m": 9.2
+      },
+      {
+        "date": "2025-01-31",
+        "close": 2.915,
+        "volume_m": 8.9
+      },
+      {
+        "date": "2025-02-28",
+        "close": 2.907,
+        "volume_m": 8.6
+      },
+      {
+        "date": "2025-03-31",
+        "close": 2.901,
+        "volume_m": 8.2
+      },
+      {
+        "date": "2025-04-30",
+        "close": 2.898,
+        "volume_m": 8.4
+      },
+      {
+        "date": "2025-05-31",
+        "close": 2.899,
+        "volume_m": 8.9
+      },
+      {
+        "date": "2025-06-30",
+        "close": 2.909,
+        "volume_m": 9.4
+      },
+      {
+        "date": "2025-07-31",
+        "close": 2.914,
+        "volume_m": 9.6
+      },
+      {
+        "date": "2025-08-31",
+        "close": 2.916,
+        "volume_m": 9.8
+      },
+      {
+        "date": "2025-09-30",
+        "close": 2.923,
+        "volume_m": 9.7
+      },
+      {
+        "date": "2025-10-31",
+        "close": 2.93,
+        "volume_m": 9.6
+      },
+      {
+        "date": "2025-11-30",
+        "close": 2.935,
+        "volume_m": 9.3
+      },
+      {
+        "date": "2025-12-31",
+        "close": 2.94,
+        "volume_m": 8
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 65000,
+        "net_income_m": 1890,
+        "operating_margin": 0.05,
+        "eps": 0.3,
+        "free_cash_flow_m": 1180,
+        "debt_to_equity": 0.86
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 70500,
+        "net_income_m": 2100,
+        "operating_margin": 0.052,
+        "eps": 0.33,
+        "free_cash_flow_m": 1290,
+        "debt_to_equity": 0.9
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 68200,
+        "net_income_m": 1800,
+        "operating_margin": 0.047,
+        "eps": 0.29,
+        "free_cash_flow_m": 1010,
+        "debt_to_equity": 0.96
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 67100,
+        "net_income_m": 1650,
+        "operating_margin": 0.044,
+        "eps": 0.26,
+        "free_cash_flow_m": 860,
+        "debt_to_equity": 1.02
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 66400,
+        "net_income_m": 1540,
+        "operating_margin": 0.041,
+        "eps": 0.24,
+        "free_cash_flow_m": 780,
+        "debt_to_equity": 1.08
+      }
+    ],
+    "valuation": {
+      "pe": 12.1,
+      "pb": 0.82,
+      "ev_ebitda": 8.1,
+      "dividend_yield": 0.035
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 100.8,
+        "benchmark_index": 100.5
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 101.22,
+        "benchmark_index": 100.77
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 101.17,
+        "benchmark_index": 100.76
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 99.91,
+        "benchmark_index": 100.13
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 99.1,
+        "benchmark_index": 99.67
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 98.04,
+        "benchmark_index": 99.06
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 97.47,
+        "benchmark_index": 98.66
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 96.25,
+        "benchmark_index": 97.94
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 95.15,
+        "benchmark_index": 97.27
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 94.27,
+        "benchmark_index": 96.71
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 93.63,
+        "benchmark_index": 96.27
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 93.25,
+        "benchmark_index": 95.99
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 92.59,
+        "benchmark_index": 95.59
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 92.62,
+        "benchmark_index": 95.56
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 92.73,
+        "benchmark_index": 95.61
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 92.9,
+        "benchmark_index": 95.71
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 93,
+        "benchmark_index": 95.82
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 93.35,
+        "benchmark_index": 96.09
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 93.22,
+        "benchmark_index": 96.15
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 92.93,
+        "benchmark_index": 96.17
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 92.53,
+        "benchmark_index": 96.16
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 91.73,
+        "benchmark_index": 95.97
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 91.22,
+        "benchmark_index": 95.95
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 90.75,
+        "benchmark_index": 95.96
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 90.35,
+        "benchmark_index": 96.03
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 90.07,
+        "benchmark_index": 96.16
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 89.92,
+        "benchmark_index": 96.35
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 89.9,
+        "benchmark_index": 96.63
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 90.12,
+        "benchmark_index": 97.01
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 90.3,
+        "benchmark_index": 97.38
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 90.48,
+        "benchmark_index": 97.74
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 90.78,
+        "benchmark_index": 98.15
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 91.11,
+        "benchmark_index": 98.57
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 91.42,
+        "benchmark_index": 98.97
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 91.73,
+        "benchmark_index": 99.35
+      }
+    ]
+  },
+  {
+    "company_id": "C007",
+    "currency": "SGD",
+    "market_cap_m": 51400,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 2.798,
+        "volume_m": 16.8
+      },
+      {
+        "date": "2023-02-28",
+        "close": 2.835,
+        "volume_m": 17.6
+      },
+      {
+        "date": "2023-03-31",
+        "close": 2.858,
+        "volume_m": 18.2
+      },
+      {
+        "date": "2023-04-30",
+        "close": 2.868,
+        "volume_m": 18.4
+      },
+      {
+        "date": "2023-05-31",
+        "close": 2.844,
+        "volume_m": 18.2
+      },
+      {
+        "date": "2023-06-30",
+        "close": 2.836,
+        "volume_m": 17.7
+      },
+      {
+        "date": "2023-07-31",
+        "close": 2.825,
+        "volume_m": 17
+      },
+      {
+        "date": "2023-08-31",
+        "close": 2.832,
+        "volume_m": 16.1
+      },
+      {
+        "date": "2023-09-30",
+        "close": 2.825,
+        "volume_m": 16.4
+      },
+      {
+        "date": "2023-10-31",
+        "close": 2.826,
+        "volume_m": 17.5
+      },
+      {
+        "date": "2023-11-30",
+        "close": 2.835,
+        "volume_m": 18.5
+      },
+      {
+        "date": "2023-12-31",
+        "close": 2.853,
+        "volume_m": 19.2
+      },
+      {
+        "date": "2024-01-31",
+        "close": 2.879,
+        "volume_m": 19.5
+      },
+      {
+        "date": "2024-02-29",
+        "close": 2.896,
+        "volume_m": 19.5
+      },
+      {
+        "date": "2024-03-31",
+        "close": 2.934,
+        "volume_m": 19.2
+      },
+      {
+        "date": "2024-04-30",
+        "close": 2.973,
+        "volume_m": 18.6
+      },
+      {
+        "date": "2024-05-31",
+        "close": 3.011,
+        "volume_m": 17.7
+      },
+      {
+        "date": "2024-06-30",
+        "close": 3.046,
+        "volume_m": 17.1
+      },
+      {
+        "date": "2024-07-31",
+        "close": 3.087,
+        "volume_m": 18.3
+      },
+      {
+        "date": "2024-08-31",
+        "close": 3.111,
+        "volume_m": 19.3
+      },
+      {
+        "date": "2024-09-30",
+        "close": 3.129,
+        "volume_m": 20.1
+      },
+      {
+        "date": "2024-10-31",
+        "close": 3.141,
+        "volume_m": 20.6
+      },
+      {
+        "date": "2024-11-30",
+        "close": 3.14,
+        "volume_m": 20.8
+      },
+      {
+        "date": "2024-12-31",
+        "close": 3.146,
+        "volume_m": 20.6
+      },
+      {
+        "date": "2025-01-31",
+        "close": 3.152,
+        "volume_m": 20.1
+      },
+      {
+        "date": "2025-02-28",
+        "close": 3.158,
+        "volume_m": 19.3
+      },
+      {
+        "date": "2025-03-31",
+        "close": 3.166,
+        "volume_m": 18.4
+      },
+      {
+        "date": "2025-04-30",
+        "close": 3.174,
+        "volume_m": 19
+      },
+      {
+        "date": "2025-05-31",
+        "close": 3.185,
+        "volume_m": 20.1
+      },
+      {
+        "date": "2025-06-30",
+        "close": 3.199,
+        "volume_m": 21
+      },
+      {
+        "date": "2025-07-31",
+        "close": 3.209,
+        "volume_m": 21.7
+      },
+      {
+        "date": "2025-08-31",
+        "close": 3.215,
+        "volume_m": 22
+      },
+      {
+        "date": "2025-09-30",
+        "close": 3.224,
+        "volume_m": 21.9
+      },
+      {
+        "date": "2025-10-31",
+        "close": 3.231,
+        "volume_m": 21.5
+      },
+      {
+        "date": "2025-11-30",
+        "close": 3.236,
+        "volume_m": 20.9
+      },
+      {
+        "date": "2025-12-31",
+        "close": 3.24,
+        "volume_m": 18
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 15100,
+        "net_income_m": 1950,
+        "operating_margin": 0.2,
+        "eps": 0.12,
+        "free_cash_flow_m": 1620,
+        "debt_to_equity": 0.81
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 15300,
+        "net_income_m": 2010,
+        "operating_margin": 0.21,
+        "eps": 0.12,
+        "free_cash_flow_m": 1710,
+        "debt_to_equity": 0.78
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 15600,
+        "net_income_m": 2080,
+        "operating_margin": 0.22,
+        "eps": 0.13,
+        "free_cash_flow_m": 1790,
+        "debt_to_equity": 0.75
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 16000,
+        "net_income_m": 2180,
+        "operating_margin": 0.23,
+        "eps": 0.13,
+        "free_cash_flow_m": 1900,
+        "debt_to_equity": 0.72
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 16500,
+        "net_income_m": 2320,
+        "operating_margin": 0.24,
+        "eps": 0.14,
+        "free_cash_flow_m": 2040,
+        "debt_to_equity": 0.7
+      }
+    ],
+    "valuation": {
+      "pe": 18.6,
+      "pb": 1.48,
+      "ev_ebitda": 9.8,
+      "dividend_yield": 0.048
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 101.41,
+        "benchmark_index": 100.6
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 102.55,
+        "benchmark_index": 101.01
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 103.41,
+        "benchmark_index": 101.24
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 103.54,
+        "benchmark_index": 101.08
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 103.97,
+        "benchmark_index": 101.04
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 104.28,
+        "benchmark_index": 100.91
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 104.9,
+        "benchmark_index": 100.92
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 105.15,
+        "benchmark_index": 100.76
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 105.5,
+        "benchmark_index": 100.63
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 105.93,
+        "benchmark_index": 100.57
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 106.48,
+        "benchmark_index": 100.57
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 107.12,
+        "benchmark_index": 100.64
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 107.49,
+        "benchmark_index": 100.61
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 108.25,
+        "benchmark_index": 100.8
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 108.98,
+        "benchmark_index": 101
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 109.65,
+        "benchmark_index": 101.21
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 110.22,
+        "benchmark_index": 101.42
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 110.92,
+        "benchmark_index": 101.71
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 111.27,
+        "benchmark_index": 101.89
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 111.53,
+        "benchmark_index": 102.05
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 111.71,
+        "benchmark_index": 102.21
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 111.69,
+        "benchmark_index": 102.3
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 111.88,
+        "benchmark_index": 102.5
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 112.16,
+        "benchmark_index": 102.76
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 112.53,
+        "benchmark_index": 103.06
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 113.03,
+        "benchmark_index": 103.43
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 113.62,
+        "benchmark_index": 103.83
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 114.36,
+        "benchmark_index": 104.3
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 115.23,
+        "benchmark_index": 104.83
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 116.1,
+        "benchmark_index": 105.34
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 116.93,
+        "benchmark_index": 105.82
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 117.86,
+        "benchmark_index": 106.34
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 118.78,
+        "benchmark_index": 106.83
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 119.65,
+        "benchmark_index": 107.29
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 120.49,
+        "benchmark_index": 107.72
+      }
+    ]
+  },
+  {
+    "company_id": "C008",
+    "currency": "SGD",
+    "market_cap_m": 69000,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 13.42,
+        "volume_m": 4.9
+      },
+      {
+        "date": "2023-02-28",
+        "close": 13.57,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2023-03-31",
+        "close": 13.64,
+        "volume_m": 5.3
+      },
+      {
+        "date": "2023-04-30",
+        "close": 13.66,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2023-05-31",
+        "close": 13.52,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2023-06-30",
+        "close": 13.48,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2023-07-31",
+        "close": 13.45,
+        "volume_m": 5
+      },
+      {
+        "date": "2023-08-31",
+        "close": 13.53,
+        "volume_m": 4.7
+      },
+      {
+        "date": "2023-09-30",
+        "close": 13.55,
+        "volume_m": 4.8
+      },
+      {
+        "date": "2023-10-31",
+        "close": 13.62,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2023-11-30",
+        "close": 13.73,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2023-12-31",
+        "close": 13.89,
+        "volume_m": 5.6
+      },
+      {
+        "date": "2024-01-31",
+        "close": 14.09,
+        "volume_m": 5.8
+      },
+      {
+        "date": "2024-02-29",
+        "close": 14.23,
+        "volume_m": 5.8
+      },
+      {
+        "date": "2024-03-31",
+        "close": 14.46,
+        "volume_m": 5.7
+      },
+      {
+        "date": "2024-04-30",
+        "close": 14.69,
+        "volume_m": 5.5
+      },
+      {
+        "date": "2024-05-31",
+        "close": 14.9,
+        "volume_m": 5.2
+      },
+      {
+        "date": "2024-06-30",
+        "close": 15.08,
+        "volume_m": 5
+      },
+      {
+        "date": "2024-07-31",
+        "close": 15.29,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2024-08-31",
+        "close": 15.4,
+        "volume_m": 5.7
+      },
+      {
+        "date": "2024-09-30",
+        "close": 15.49,
+        "volume_m": 5.9
+      },
+      {
+        "date": "2024-10-31",
+        "close": 15.55,
+        "volume_m": 6.1
+      },
+      {
+        "date": "2024-11-30",
+        "close": 15.54,
+        "volume_m": 6.1
+      },
+      {
+        "date": "2024-12-31",
+        "close": 15.58,
+        "volume_m": 6.1
+      },
+      {
+        "date": "2025-01-31",
+        "close": 15.62,
+        "volume_m": 5.9
+      },
+      {
+        "date": "2025-02-28",
+        "close": 15.68,
+        "volume_m": 5.7
+      },
+      {
+        "date": "2025-03-31",
+        "close": 15.73,
+        "volume_m": 5.4
+      },
+      {
+        "date": "2025-04-30",
+        "close": 15.8,
+        "volume_m": 5.6
+      },
+      {
+        "date": "2025-05-31",
+        "close": 15.87,
+        "volume_m": 5.9
+      },
+      {
+        "date": "2025-06-30",
+        "close": 15.96,
+        "volume_m": 6.2
+      },
+      {
+        "date": "2025-07-31",
+        "close": 16.02,
+        "volume_m": 6.4
+      },
+      {
+        "date": "2025-08-31",
+        "close": 16.06,
+        "volume_m": 6.5
+      },
+      {
+        "date": "2025-09-30",
+        "close": 16.11,
+        "volume_m": 6.5
+      },
+      {
+        "date": "2025-10-31",
+        "close": 16.15,
+        "volume_m": 6.3
+      },
+      {
+        "date": "2025-11-30",
+        "close": 16.17,
+        "volume_m": 6.1
+      },
+      {
+        "date": "2025-12-31",
+        "close": 16.2,
+        "volume_m": 5.3
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 11200,
+        "net_income_m": 4900,
+        "operating_margin": 0.39,
+        "eps": 1.08,
+        "free_cash_flow_m": 4200,
+        "debt_to_equity": 0.7
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 12800,
+        "net_income_m": 5750,
+        "operating_margin": 0.42,
+        "eps": 1.26,
+        "free_cash_flow_m": 5010,
+        "debt_to_equity": 0.68
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 13900,
+        "net_income_m": 6900,
+        "operating_margin": 0.45,
+        "eps": 1.51,
+        "free_cash_flow_m": 6120,
+        "debt_to_equity": 0.66
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 14800,
+        "net_income_m": 7250,
+        "operating_margin": 0.46,
+        "eps": 1.59,
+        "free_cash_flow_m": 6400,
+        "debt_to_equity": 0.64
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 15600,
+        "net_income_m": 7680,
+        "operating_margin": 0.47,
+        "eps": 1.68,
+        "free_cash_flow_m": 6820,
+        "debt_to_equity": 0.62
+      }
+    ],
+    "valuation": {
+      "pe": 11.5,
+      "pb": 1.45,
+      "ev_ebitda": 8.2,
+      "dividend_yield": 0.049
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 101.37,
+        "benchmark_index": 100.52
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 102.39,
+        "benchmark_index": 100.83
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 103.18,
+        "benchmark_index": 100.98
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 103.23,
+        "benchmark_index": 100.76
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 103.66,
+        "benchmark_index": 100.69
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 104.07,
+        "benchmark_index": 100.6
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 104.9,
+        "benchmark_index": 100.7
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 105.39,
+        "benchmark_index": 100.64
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 106.02,
+        "benchmark_index": 100.66
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 106.74,
+        "benchmark_index": 100.74
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 107.62,
+        "benchmark_index": 100.91
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 108.6,
+        "benchmark_index": 101.15
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 109.24,
+        "benchmark_index": 101.28
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 110.24,
+        "benchmark_index": 101.59
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 111.19,
+        "benchmark_index": 101.92
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 112.02,
+        "benchmark_index": 102.24
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 112.72,
+        "benchmark_index": 102.53
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 113.56,
+        "benchmark_index": 102.91
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 113.99,
+        "benchmark_index": 103.15
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 114.39,
+        "benchmark_index": 103.4
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 114.73,
+        "benchmark_index": 103.64
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 114.84,
+        "benchmark_index": 103.8
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 115.25,
+        "benchmark_index": 104.11
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 115.75,
+        "benchmark_index": 104.47
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 116.43,
+        "benchmark_index": 104.91
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 117.17,
+        "benchmark_index": 105.37
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 118.07,
+        "benchmark_index": 105.91
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 119.07,
+        "benchmark_index": 106.48
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 120.22,
+        "benchmark_index": 107.1
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 121.3,
+        "benchmark_index": 107.68
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 122.33,
+        "benchmark_index": 108.23
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 123.43,
+        "benchmark_index": 108.8
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 124.49,
+        "benchmark_index": 109.33
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 125.45,
+        "benchmark_index": 109.8
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 126.41,
+        "benchmark_index": 110.26
+      }
+    ]
+  },
+  {
+    "company_id": "C009",
+    "currency": "SGD",
+    "market_cap_m": 56000,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 29.06,
+        "volume_m": 3.9
+      },
+      {
+        "date": "2023-02-28",
+        "close": 29.22,
+        "volume_m": 4.1
+      },
+      {
+        "date": "2023-03-31",
+        "close": 29.26,
+        "volume_m": 4.2
+      },
+      {
+        "date": "2023-04-30",
+        "close": 29.22,
+        "volume_m": 4.3
+      },
+      {
+        "date": "2023-05-31",
+        "close": 28.9,
+        "volume_m": 4.3
+      },
+      {
+        "date": "2023-06-30",
+        "close": 28.83,
+        "volume_m": 4.1
+      },
+      {
+        "date": "2023-07-31",
+        "close": 28.81,
+        "volume_m": 4
+      },
+      {
+        "date": "2023-08-31",
+        "close": 29.04,
+        "volume_m": 3.8
+      },
+      {
+        "date": "2023-09-30",
+        "close": 29.18,
+        "volume_m": 3.8
+      },
+      {
+        "date": "2023-10-31",
+        "close": 29.42,
+        "volume_m": 4.1
+      },
+      {
+        "date": "2023-11-30",
+        "close": 29.74,
+        "volume_m": 4.3
+      },
+      {
+        "date": "2023-12-31",
+        "close": 30.14,
+        "volume_m": 4.5
+      },
+      {
+        "date": "2024-01-31",
+        "close": 30.59,
+        "volume_m": 4.6
+      },
+      {
+        "date": "2024-02-29",
+        "close": 30.9,
+        "volume_m": 4.6
+      },
+      {
+        "date": "2024-03-31",
+        "close": 31.37,
+        "volume_m": 4.5
+      },
+      {
+        "date": "2024-04-30",
+        "close": 31.8,
+        "volume_m": 4.3
+      },
+      {
+        "date": "2024-05-31",
+        "close": 32.18,
+        "volume_m": 4.1
+      },
+      {
+        "date": "2024-06-30",
+        "close": 32.49,
+        "volume_m": 4
+      },
+      {
+        "date": "2024-07-31",
+        "close": 32.85,
+        "volume_m": 4.3
+      },
+      {
+        "date": "2024-08-31",
+        "close": 33.02,
+        "volume_m": 4.5
+      },
+      {
+        "date": "2024-09-30",
+        "close": 33.15,
+        "volume_m": 4.7
+      },
+      {
+        "date": "2024-10-31",
+        "close": 33.24,
+        "volume_m": 4.8
+      },
+      {
+        "date": "2024-11-30",
+        "close": 33.22,
+        "volume_m": 4.9
+      },
+      {
+        "date": "2024-12-31",
+        "close": 33.31,
+        "volume_m": 4.8
+      },
+      {
+        "date": "2025-01-31",
+        "close": 33.42,
+        "volume_m": 4.7
+      },
+      {
+        "date": "2025-02-28",
+        "close": 33.54,
+        "volume_m": 4.5
+      },
+      {
+        "date": "2025-03-31",
+        "close": 33.68,
+        "volume_m": 4.3
+      },
+      {
+        "date": "2025-04-30",
+        "close": 33.82,
+        "volume_m": 4.4
+      },
+      {
+        "date": "2025-05-31",
+        "close": 33.97,
+        "volume_m": 4.7
+      },
+      {
+        "date": "2025-06-30",
+        "close": 34.16,
+        "volume_m": 4.9
+      },
+      {
+        "date": "2025-07-31",
+        "close": 34.28,
+        "volume_m": 5.1
+      },
+      {
+        "date": "2025-08-31",
+        "close": 34.34,
+        "volume_m": 5.1
+      },
+      {
+        "date": "2025-09-30",
+        "close": 34.43,
+        "volume_m": 5.1
+      },
+      {
+        "date": "2025-10-31",
+        "close": 34.49,
+        "volume_m": 5
+      },
+      {
+        "date": "2025-11-30",
+        "close": 34.55,
+        "volume_m": 4.9
+      },
+      {
+        "date": "2025-12-31",
+        "close": 34.6,
+        "volume_m": 4.2
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 10300,
+        "net_income_m": 4100,
+        "operating_margin": 0.37,
+        "eps": 2.42,
+        "free_cash_flow_m": 3500,
+        "debt_to_equity": 0.73
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 11600,
+        "net_income_m": 4600,
+        "operating_margin": 0.39,
+        "eps": 2.7,
+        "free_cash_flow_m": 3900,
+        "debt_to_equity": 0.7
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 12800,
+        "net_income_m": 5200,
+        "operating_margin": 0.41,
+        "eps": 3.05,
+        "free_cash_flow_m": 4480,
+        "debt_to_equity": 0.68
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 13600,
+        "net_income_m": 5600,
+        "operating_margin": 0.42,
+        "eps": 3.28,
+        "free_cash_flow_m": 4810,
+        "debt_to_equity": 0.66
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 14200,
+        "net_income_m": 5900,
+        "operating_margin": 0.43,
+        "eps": 3.45,
+        "free_cash_flow_m": 5120,
+        "debt_to_equity": 0.65
+      }
+    ],
+    "valuation": {
+      "pe": 10.2,
+      "pb": 1.28,
+      "ev_ebitda": 7.9,
+      "dividend_yield": 0.053
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 101.01,
+        "benchmark_index": 100.31
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 101.76,
+        "benchmark_index": 100.45
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 102.31,
+        "benchmark_index": 100.46
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 102.25,
+        "benchmark_index": 100.16
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 102.62,
+        "benchmark_index": 100.05
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 103.02,
+        "benchmark_index": 99.95
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 103.87,
+        "benchmark_index": 100.07
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 104.45,
+        "benchmark_index": 100.06
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 105.15,
+        "benchmark_index": 100.14
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 105.94,
+        "benchmark_index": 100.28
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 106.83,
+        "benchmark_index": 100.48
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 107.75,
+        "benchmark_index": 100.74
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 108.33,
+        "benchmark_index": 100.87
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 109.2,
+        "benchmark_index": 101.17
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 109.96,
+        "benchmark_index": 101.46
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 110.62,
+        "benchmark_index": 101.73
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 111.14,
+        "benchmark_index": 101.98
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 111.8,
+        "benchmark_index": 102.31
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 112.12,
+        "benchmark_index": 102.53
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 112.43,
+        "benchmark_index": 102.76
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 112.74,
+        "benchmark_index": 103.01
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 112.91,
+        "benchmark_index": 103.22
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 113.39,
+        "benchmark_index": 103.56
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 114,
+        "benchmark_index": 103.98
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 114.72,
+        "benchmark_index": 104.44
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 115.57,
+        "benchmark_index": 104.95
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 116.5,
+        "benchmark_index": 105.49
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 117.52,
+        "benchmark_index": 106.06
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 118.67,
+        "benchmark_index": 106.68
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 119.73,
+        "benchmark_index": 107.25
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 120.69,
+        "benchmark_index": 107.75
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 121.71,
+        "benchmark_index": 108.27
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 122.66,
+        "benchmark_index": 108.74
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 123.57,
+        "benchmark_index": 109.18
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 124.41,
+        "benchmark_index": 109.58
+      }
+    ]
+  },
+  {
+    "company_id": "C010",
+    "currency": "SGD",
+    "market_cap_m": 18600,
+    "latest_fiscal_period": "FY2025",
+    "data_freshness_note": "Static demo financial profile for hackathon decision-support UI; not live market data.",
+    "price_history": [
+      {
+        "date": "2023-01-31",
+        "close": 1.819,
+        "volume_m": 2.4
+      },
+      {
+        "date": "2023-02-28",
+        "close": 1.815,
+        "volume_m": 2.5
+      },
+      {
+        "date": "2023-03-31",
+        "close": 1.807,
+        "volume_m": 2.6
+      },
+      {
+        "date": "2023-04-30",
+        "close": 1.796,
+        "volume_m": 2.7
+      },
+      {
+        "date": "2023-05-31",
+        "close": 1.773,
+        "volume_m": 2.6
+      },
+      {
+        "date": "2023-06-30",
+        "close": 1.766,
+        "volume_m": 2.6
+      },
+      {
+        "date": "2023-07-31",
+        "close": 1.764,
+        "volume_m": 2.5
+      },
+      {
+        "date": "2023-08-31",
+        "close": 1.777,
+        "volume_m": 2.3
+      },
+      {
+        "date": "2023-09-30",
+        "close": 1.786,
+        "volume_m": 2.4
+      },
+      {
+        "date": "2023-10-31",
+        "close": 1.8,
+        "volume_m": 2.5
+      },
+      {
+        "date": "2023-11-30",
+        "close": 1.819,
+        "volume_m": 2.7
+      },
+      {
+        "date": "2023-12-31",
+        "close": 1.84,
+        "volume_m": 2.8
+      },
+      {
+        "date": "2024-01-31",
+        "close": 1.863,
+        "volume_m": 2.8
+      },
+      {
+        "date": "2024-02-29",
+        "close": 1.877,
+        "volume_m": 2.8
+      },
+      {
+        "date": "2024-03-31",
+        "close": 1.898,
+        "volume_m": 2.8
+      },
+      {
+        "date": "2024-04-30",
+        "close": 1.916,
+        "volume_m": 2.7
+      },
+      {
+        "date": "2024-05-31",
+        "close": 1.93,
+        "volume_m": 2.6
+      },
+      {
+        "date": "2024-06-30",
+        "close": 1.941,
+        "volume_m": 2.5
+      },
+      {
+        "date": "2024-07-31",
+        "close": 1.954,
+        "volume_m": 2.6
+      },
+      {
+        "date": "2024-08-31",
+        "close": 1.959,
+        "volume_m": 2.8
+      },
+      {
+        "date": "2024-09-30",
+        "close": 1.961,
+        "volume_m": 2.9
+      },
+      {
+        "date": "2024-10-31",
+        "close": 1.963,
+        "volume_m": 3
+      },
+      {
+        "date": "2024-11-30",
+        "close": 1.959,
+        "volume_m": 3
+      },
+      {
+        "date": "2024-12-31",
+        "close": 1.963,
+        "volume_m": 3
+      },
+      {
+        "date": "2025-01-31",
+        "close": 1.968,
+        "volume_m": 2.9
+      },
+      {
+        "date": "2025-02-28",
+        "close": 1.974,
+        "volume_m": 2.8
+      },
+      {
+        "date": "2025-03-31",
+        "close": 1.98,
+        "volume_m": 2.7
+      },
+      {
+        "date": "2025-04-30",
+        "close": 1.987,
+        "volume_m": 2.7
+      },
+      {
+        "date": "2025-05-31",
+        "close": 1.994,
+        "volume_m": 2.9
+      },
+      {
+        "date": "2025-06-30",
+        "close": 2.002,
+        "volume_m": 3
+      },
+      {
+        "date": "2025-07-31",
+        "close": 2.007,
+        "volume_m": 3.1
+      },
+      {
+        "date": "2025-08-31",
+        "close": 2.009,
+        "volume_m": 3.2
+      },
+      {
+        "date": "2025-09-30",
+        "close": 2.012,
+        "volume_m": 3.2
+      },
+      {
+        "date": "2025-10-31",
+        "close": 2.015,
+        "volume_m": 3.1
+      },
+      {
+        "date": "2025-11-30",
+        "close": 2.017,
+        "volume_m": 3
+      },
+      {
+        "date": "2025-12-31",
+        "close": 2.02,
+        "volume_m": 2.6
+      }
+    ],
+    "fundamentals": [
+      {
+        "period": "FY2021",
+        "revenue_m": 2700,
+        "net_income_m": 820,
+        "operating_margin": 0.28,
+        "eps": 0.11,
+        "free_cash_flow_m": 620,
+        "debt_to_equity": 0.89
+      },
+      {
+        "period": "FY2022",
+        "revenue_m": 2820,
+        "net_income_m": 850,
+        "operating_margin": 0.29,
+        "eps": 0.12,
+        "free_cash_flow_m": 650,
+        "debt_to_equity": 0.87
+      },
+      {
+        "period": "FY2023",
+        "revenue_m": 2960,
+        "net_income_m": 890,
+        "operating_margin": 0.3,
+        "eps": 0.12,
+        "free_cash_flow_m": 690,
+        "debt_to_equity": 0.84
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 3050,
+        "net_income_m": 920,
+        "operating_margin": 0.3,
+        "eps": 0.13,
+        "free_cash_flow_m": 720,
+        "debt_to_equity": 0.82
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 3180,
+        "net_income_m": 960,
+        "operating_margin": 0.31,
+        "eps": 0.13,
+        "free_cash_flow_m": 760,
+        "debt_to_equity": 0.8
+      }
+    ],
+    "valuation": {
+      "pe": 13.8,
+      "pb": 0.88,
+      "ev_ebitda": 10.6,
+      "dividend_yield": 0.034
+    },
+    "backtest_history": [
+      {
+        "period": "Start",
+        "date": "2023-01-31",
+        "signal_index": 100,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M1",
+        "date": "2023-02-28",
+        "signal_index": 100.42,
+        "benchmark_index": 100
+      },
+      {
+        "period": "M2",
+        "date": "2023-03-31",
+        "signal_index": 100.66,
+        "benchmark_index": 99.89
+      },
+      {
+        "period": "M3",
+        "date": "2023-04-30",
+        "signal_index": 100.76,
+        "benchmark_index": 99.68
+      },
+      {
+        "period": "M4",
+        "date": "2023-05-31",
+        "signal_index": 100.4,
+        "benchmark_index": 99.25
+      },
+      {
+        "period": "M5",
+        "date": "2023-06-30",
+        "signal_index": 100.49,
+        "benchmark_index": 99.02
+      },
+      {
+        "period": "M6",
+        "date": "2023-07-31",
+        "signal_index": 100.66,
+        "benchmark_index": 98.84
+      },
+      {
+        "period": "M7",
+        "date": "2023-08-31",
+        "signal_index": 101.25,
+        "benchmark_index": 98.87
+      },
+      {
+        "period": "M8",
+        "date": "2023-09-30",
+        "signal_index": 101.62,
+        "benchmark_index": 98.82
+      },
+      {
+        "period": "M9",
+        "date": "2023-10-31",
+        "signal_index": 102.09,
+        "benchmark_index": 98.83
+      },
+      {
+        "period": "M10",
+        "date": "2023-11-30",
+        "signal_index": 102.65,
+        "benchmark_index": 98.91
+      },
+      {
+        "period": "M11",
+        "date": "2023-12-31",
+        "signal_index": 103.21,
+        "benchmark_index": 99.03
+      },
+      {
+        "period": "M12",
+        "date": "2024-01-31",
+        "signal_index": 103.78,
+        "benchmark_index": 99.19
+      },
+      {
+        "period": "M13",
+        "date": "2024-02-29",
+        "signal_index": 104.03,
+        "benchmark_index": 99.23
+      },
+      {
+        "period": "M14",
+        "date": "2024-03-31",
+        "signal_index": 104.48,
+        "benchmark_index": 99.4
+      },
+      {
+        "period": "M15",
+        "date": "2024-04-30",
+        "signal_index": 104.82,
+        "benchmark_index": 99.56
+      },
+      {
+        "period": "M16",
+        "date": "2024-05-31",
+        "signal_index": 105.05,
+        "benchmark_index": 99.7
+      },
+      {
+        "period": "M17",
+        "date": "2024-06-30",
+        "signal_index": 105.22,
+        "benchmark_index": 99.84
+      },
+      {
+        "period": "M18",
+        "date": "2024-07-31",
+        "signal_index": 105.49,
+        "benchmark_index": 100.05
+      },
+      {
+        "period": "M19",
+        "date": "2024-08-31",
+        "signal_index": 105.57,
+        "benchmark_index": 100.2
+      },
+      {
+        "period": "M20",
+        "date": "2024-09-30",
+        "signal_index": 105.63,
+        "benchmark_index": 100.35
+      },
+      {
+        "period": "M21",
+        "date": "2024-10-31",
+        "signal_index": 105.76,
+        "benchmark_index": 100.56
+      },
+      {
+        "period": "M22",
+        "date": "2024-11-30",
+        "signal_index": 105.79,
+        "benchmark_index": 100.72
+      },
+      {
+        "period": "M23",
+        "date": "2024-12-31",
+        "signal_index": 106.16,
+        "benchmark_index": 101.05
+      },
+      {
+        "period": "M24",
+        "date": "2025-01-31",
+        "signal_index": 106.64,
+        "benchmark_index": 101.42
+      },
+      {
+        "period": "M25",
+        "date": "2025-02-28",
+        "signal_index": 107.23,
+        "benchmark_index": 101.85
+      },
+      {
+        "period": "M26",
+        "date": "2025-03-31",
+        "signal_index": 107.89,
+        "benchmark_index": 102.3
+      },
+      {
+        "period": "M27",
+        "date": "2025-04-30",
+        "signal_index": 108.65,
+        "benchmark_index": 102.79
+      },
+      {
+        "period": "M28",
+        "date": "2025-05-31",
+        "signal_index": 109.46,
+        "benchmark_index": 103.29
+      },
+      {
+        "period": "M29",
+        "date": "2025-06-30",
+        "signal_index": 110.34,
+        "benchmark_index": 103.81
+      },
+      {
+        "period": "M30",
+        "date": "2025-07-31",
+        "signal_index": 111.13,
+        "benchmark_index": 104.28
+      },
+      {
+        "period": "M31",
+        "date": "2025-08-31",
+        "signal_index": 111.84,
+        "benchmark_index": 104.69
+      },
+      {
+        "period": "M32",
+        "date": "2025-09-30",
+        "signal_index": 112.56,
+        "benchmark_index": 105.1
+      },
+      {
+        "period": "M33",
+        "date": "2025-10-31",
+        "signal_index": 113.24,
+        "benchmark_index": 105.48
+      },
+      {
+        "period": "M34",
+        "date": "2025-11-30",
+        "signal_index": 113.84,
+        "benchmark_index": 105.8
+      },
+      {
+        "period": "M35",
+        "date": "2025-12-31",
+        "signal_index": 114.41,
+        "benchmark_index": 106.1
+      }
+    ]
+  }
+]
